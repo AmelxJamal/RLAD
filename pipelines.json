@@ -1,0 +1,5 @@
+[
+    {"name":"baseline","hint_model_id":"Qwen/Qwen3-4B","solver_model_id":"Qwen/Qwen3-1.7B"},
+    {"name":"rlad_main","hint_model_id":"CMU-AIRe/RLAD-Hint-Gen","solver_model_id":"CMU-AIRe/RLAD-Sol-Gen"}
+  ]
+  

@@ -1,0 +1,178 @@
+{
+  "dataset": {
+    "name": "qintongli/GSM-Plus",
+    "split": "test"
+  },
+  "selected": {
+    "perturbation_types": [
+      "adding operation",
+      "critical thinking",
+      "digit expansion",
+      "distraction insertion",
+      "integer-decimal-fraction conversion",
+      "numerical substitution",
+      "problem understanding",
+      "reversing operation"
+    ],
+    "max_per_type": 100,
+    "n_total": 800
+  },
+  "gen_cfg": {
+    "dtype": "bfloat16",
+    "device_map": "auto",
+    "max_context_tokens": 4096,
+    "max_new_tokens_hint": 2048,
+    "max_new_tokens_sol": 2048,
+    "do_sample": false,
+    "temperature": 0.7,
+    "top_p": 0.9
+  },
+  "pipelines": [
+    {
+      "name": "baseline",
+      "hint_model_id": "Qwen/Qwen3-4B",
+      "solver_model_id": "Qwen/Qwen3-1.7B"
+    },
+    {
+      "name": "rlad_main",
+      "hint_model_id": "CMU-AIRe/RLAD-Hint-Gen",
+      "solver_model_id": "CMU-AIRe/RLAD-Sol-Gen"
+    }
+  ],
+  "aggregate": {
+    "baseline": {
+      "overall": {
+        "n": 800,
+        "correct": 567,
+        "parse_fail": 0,
+        "no_boxed": 109,
+        "acc": 0.70875
+      },
+      "by_perturbation_type": {
+        "problem understanding": {
+          "n": 100,
+          "correct": 81,
+          "parse_fail": 0,
+          "no_boxed": 9,
+          "acc": 0.81
+        },
+        "numerical substitution": {
+          "n": 100,
+          "correct": 77,
+          "parse_fail": 0,
+          "no_boxed": 10,
+          "acc": 0.77
+        },
+        "distraction insertion": {
+          "n": 100,
+          "correct": 90,
+          "parse_fail": 0,
+          "no_boxed": 7,
+          "acc": 0.9
+        },
+        "digit expansion": {
+          "n": 100,
+          "correct": 82,
+          "parse_fail": 0,
+          "no_boxed": 7,
+          "acc": 0.82
+        },
+        "critical thinking": {
+          "n": 100,
+          "correct": 0,
+          "parse_fail": 0,
+          "no_boxed": 34,
+          "acc": 0.0
+        },
+        "adding operation": {
+          "n": 100,
+          "correct": 70,
+          "parse_fail": 0,
+          "no_boxed": 20,
+          "acc": 0.7
+        },
+        "integer-decimal-fraction conversion": {
+          "n": 100,
+          "correct": 87,
+          "parse_fail": 0,
+          "no_boxed": 11,
+          "acc": 0.87
+        },
+        "reversing operation": {
+          "n": 100,
+          "correct": 80,
+          "parse_fail": 0,
+          "no_boxed": 11,
+          "acc": 0.8
+        }
+      }
+    },
+    "rlad_main": {
+      "overall": {
+        "n": 800,
+        "correct": 479,
+        "parse_fail": 0,
+        "no_boxed": 276,
+        "acc": 0.59875
+      },
+      "by_perturbation_type": {
+        "problem understanding": {
+          "n": 100,
+          "correct": 78,
+          "parse_fail": 0,
+          "no_boxed": 16,
+          "acc": 0.78
+        },
+        "numerical substitution": {
+          "n": 100,
+          "correct": 67,
+          "parse_fail": 0,
+          "no_boxed": 28,
+          "acc": 0.67
+        },
+        "distraction insertion": {
+          "n": 100,
+          "correct": 70,
+          "parse_fail": 0,
+          "no_boxed": 26,
+          "acc": 0.7
+        },
+        "digit expansion": {
+          "n": 100,
+          "correct": 72,
+          "parse_fail": 0,
+          "no_boxed": 22,
+          "acc": 0.72
+        },
+        "critical thinking": {
+          "n": 100,
+          "correct": 0,
+          "parse_fail": 0,
+          "no_boxed": 84,
+          "acc": 0.0
+        },
+        "adding operation": {
+          "n": 100,
+          "correct": 54,
+          "parse_fail": 0,
+          "no_boxed": 43,
+          "acc": 0.54
+        },
+        "integer-decimal-fraction conversion": {
+          "n": 100,
+          "correct": 60,
+          "parse_fail": 0,
+          "no_boxed": 37,
+          "acc": 0.6
+        },
+        "reversing operation": {
+          "n": 100,
+          "correct": 78,
+          "parse_fail": 0,
+          "no_boxed": 20,
+          "acc": 0.78
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "dataset": {
+    "name": "qintongli/GSM-Plus",
+    "split": "test"
+  },
+  "selected": {
+    "perturbation_types": [
+      "critical thinking"
+    ],
+    "max_per_type": 200,
+    "n_total": 200
+  },
+  "gen_cfg": {
+    "dtype": "bfloat16",
+    "device_map": "auto",
+    "max_context_tokens": 4096,
+    "max_new_tokens_hint": 2048,
+    "max_new_tokens_sol": 2048,
+    "do_sample": false,
+    "temperature": 0.7,
+    "top_p": 0.9
+  },
+  "pipelines": [
+    {
+      "name": "baseline",
+      "hint_model_id": "Qwen/Qwen3-4B",
+      "solver_model_id": "Qwen/Qwen3-1.7B"
+    },
+    {
+      "name": "rlad_main",
+      "hint_model_id": "CMU-AIRe/RLAD-Hint-Gen",
+      "solver_model_id": "CMU-AIRe/RLAD-Sol-Gen"
+    }
+  ],
+  "aggregate": {
+    "baseline": {
+      "overall": {
+        "n": 200,
+        "correct": 0,
+        "parse_fail": 0,
+        "no_boxed": 72,
+        "acc": 0.0
+      },
+      "by_perturbation_type": {
+        "critical thinking": {
+          "n": 200,
+          "correct": 0,
+          "parse_fail": 0,
+          "no_boxed": 72,
+          "acc": 0.0
+        }
+      }
+    },
+    "rlad_main": {
+      "overall": {
+        "n": 200,
+        "correct": 0,
+        "parse_fail": 0,
+        "no_boxed": 163,
+        "acc": 0.0
+      },
+      "by_perturbation_type": {
+        "critical thinking": {
+          "n": 200,
+          "correct": 0,
+          "parse_fail": 0,
+          "no_boxed": 163,
+          "acc": 0.0
+        }
+      }
+    }
+  }
+}
