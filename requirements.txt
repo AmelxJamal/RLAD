@@ -1,35 +1,17 @@
-# Data science and utilities
-numpy>=1.24.0
+# Core
+numpy>=1.26.0
 pandas>=2.0.0
 scipy>=1.10.0
 scikit-learn>=1.3.0
-matplotlib>=3.7.0
-seaborn>=0.12.0
-plotly>=5.14.0
-
-# Jupyter
-jupyterlab>=4.0.0
-notebook>=7.0.0
-ipykernel>=6.20.0
-
-# Utilities
 tqdm>=4.66.0
 joblib>=1.3.0
 
-# Deep learning
-torch
-torchvision
-torchaudio
-torchtext
-tensorflow>=2.13.0
-
-
-# NLP and ML
+# HF
 transformers==4.44.2
 datasets==2.21.0
 accelerate==0.33.0
 sentencepiece==0.2.0
 protobuf==4.25.4
 
-# Monitoring
+# Optional
 wandb>=0.15.0
