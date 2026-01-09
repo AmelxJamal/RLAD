@@ -3,14 +3,12 @@ import re
 import json
 import gc
 import time
-import math
 import random
 from dataclasses import dataclass
 from collections import defaultdict
 from fractions import Fraction
 from typing import Dict, Any, Optional, List, Tuple
 import argparse
-
 
 import torch
 from datasets import load_dataset
@@ -23,17 +21,6 @@ except ImportError:
 
 
 # -------------------- Defaults --------------------
-GSMPLUS_PERTURBATIONS = [
-    "problem understanding",
-    "numerical substitution",
-    "distraction insertion",
-    "digit expansion",
-    "critical thinking",
-    "adding operation",
-    "integer-decimal-fraction conversion",
-    "reversing operation",
-]
-
 DEFAULT_PIPELINES = [
     {
         "name": "baseline_non_rlad",
@@ -145,6 +132,7 @@ def build_solver_prompt(problem: str, cheatsheet: str) -> Tuple[str, str]:
     return system, user
 
 
+# GSM8K answers are numeric; we keep your numeric extraction approach.
 _BOX_RE = re.compile(r"\\boxed\{([^}]*)\}")
 _NUM_RE = re.compile(r"(-?\d[\d,]*\.?\d*(?:/\d[\d,]*\.?\d*)?)")
 
@@ -155,23 +143,19 @@ def _to_fraction(s: str) -> Optional[Fraction]:
     t = s.strip()
     if not t:
         return None
-    # common cleanup
-    t = t.replace(",", "")
-    # keep only the first token if there are trailing words
-    # (still lets "150." or "150\n" work)
-    t = t.strip()
+    t = t.replace(",", "").strip()
 
     # Some models output like "#### 150"
     if t.startswith("####"):
         t = t[4:].strip()
 
-    # If it's something like "150)" or "150." trim non-numeric tail
+    # Trim to first numeric-looking token
     m = _NUM_RE.search(t)
     if not m:
         return None
     token = m.group(1).replace(",", "")
     try:
-        return Fraction(token)  # handles ints, decimals, simple fractions
+        return Fraction(token)  # ints, decimals, simple fractions
     except Exception:
         return None
 
@@ -189,9 +173,22 @@ def extract_pred_answer(text: str) -> Optional[str]:
     return None
 
 
+def extract_gsm8k_gt(answer_text: str) -> str:
+    """
+    GSM8K 'answer' field typically contains a rationale ending with: '#### <number>'.
+    We extract the part after the last '####'. If not present, fall back to raw text.
+    """
+    if not answer_text:
+        return ""
+    parts = answer_text.split("####")
+    if len(parts) >= 2:
+        return parts[-1].strip()
+    return answer_text.strip()
+
+
 def is_correct(pred_text: str, gt_text: str) -> Tuple[bool, Dict[str, Any]]:
     pred_raw = extract_pred_answer(pred_text)
-    gt_raw = gt_text.strip() if gt_text is not None else ""
+    gt_raw = extract_gsm8k_gt(gt_text)
 
     pred_frac = _to_fraction(pred_raw) if pred_raw is not None else None
     gt_frac = _to_fraction(gt_raw)
@@ -221,23 +218,14 @@ class GenConfig:
 
 def load_model_and_tokenizer(model_id: str, cfg: GenConfig):
     tok = AutoTokenizer.from_pretrained(model_id, trust_remote_code=True)
-    
     mdl = AutoModelForCausalLM.from_pretrained(
         model_id,
-        torch_dtype=torch_dtype(cfg.dtype),
+        dtype=torch_dtype(cfg.dtype),
         device_map=cfg.device_map,
         trust_remote_code=True,
     )
     mdl.eval()
     return mdl, tok
-
-
-def group_indices_by_perturbation(dataset) -> Dict[str, List[int]]:
-    groups = defaultdict(list)
-    for i, ex in enumerate(dataset):
-        pt = (ex.get("perturbation_type") or "").strip()
-        groups[pt].append(i)
-    return dict(groups)
 
 
 def ensure_dir(path: str):
@@ -253,10 +241,7 @@ def run_pipeline_on_indices(
     cfg: GenConfig,
     out_jsonl_path: str,
     resume: bool,
-    seed: int,
 ):
-    rnd = random.Random(seed)
-
     # Resume support: skip (pipeline_name, row_idx) already written
     done = set()
     if resume and os.path.exists(out_jsonl_path):
@@ -268,7 +253,6 @@ def run_pipeline_on_indices(
                 except Exception:
                     pass
 
-    # Load models ONCE per pipeline
     hint_model_id = pipeline["hint_model_id"]
     solver_model_id = pipeline["solver_model_id"]
 
@@ -281,7 +265,6 @@ def run_pipeline_on_indices(
         "parse_fail": 0,
         "no_boxed": 0,
     }
-    by_pt = defaultdict(lambda: {"n": 0, "correct": 0, "parse_fail": 0, "no_boxed": 0})
 
     with open(out_jsonl_path, "a", encoding="utf-8") as out_f:
         for row_idx in tqdm(indices, desc=f"{pipeline['name']}"):
@@ -289,10 +272,9 @@ def run_pipeline_on_indices(
                 continue
 
             ex = dataset[row_idx]
-            question = (ex.get("question") or ex.get("problem") or "").strip()
-            gt = (ex.get("answer") or "").strip()
-            pt = (ex.get("perturbation_type") or "").strip()
-            seed_q = (ex.get("seed_question") or "").strip()
+            question = (ex.get("question") or "").strip()
+            gt_full = (ex.get("answer") or "").strip()  # GSM8K rationale + #### answer
+            gt_extracted = extract_gsm8k_gt(gt_full)
 
             # hint
             hs, hu = build_hint_prompt(question)
@@ -326,7 +308,7 @@ def run_pipeline_on_indices(
                     torch.cuda.empty_cache()
                 solver_out = ""
 
-            correct, info = is_correct(solver_out, gt)
+            correct, info = is_correct(solver_out, gt_full)
 
             rec = {
                 "ts": time.time(),
@@ -334,10 +316,9 @@ def run_pipeline_on_indices(
                 "hint_model_id": hint_model_id,
                 "solver_model_id": solver_model_id,
                 "row_idx": row_idx,
-                "perturbation_type": pt,
-                "seed_question": seed_q,
                 "question": question,
-                "ground_truth_answer": gt,
+                "ground_truth_answer_full": gt_full,
+                "ground_truth_answer": gt_extracted,
                 "cheatsheet": cheatsheet,
                 "solver_output": solver_out,
                 "pred_extracted": info["pred_raw"],
@@ -348,50 +329,30 @@ def run_pipeline_on_indices(
             out_f.flush()
 
             stats["n"] += 1
-            by_pt[pt]["n"] += 1
-
             if info["pred_raw"] is None:
                 stats["parse_fail"] += 1
-                by_pt[pt]["parse_fail"] += 1
             if "\\boxed" not in (solver_out or ""):
                 stats["no_boxed"] += 1
-                by_pt[pt]["no_boxed"] += 1
             if correct:
                 stats["correct"] += 1
-                by_pt[pt]["correct"] += 1
 
     free_model(hint_model, hint_tok)
     free_model(sol_model, sol_tok)
 
-    # compute accuracies
-    def finalize(d):
-        n = d["n"]
-        d["acc"] = (d["correct"] / n) if n else 0.0
-        return d
-
-    stats = finalize(stats)
-    by_pt = {k: finalize(v) for k, v in by_pt.items()}
-    return stats, by_pt
+    stats["acc"] = (stats["correct"] / stats["n"]) if stats["n"] else 0.0
+    return stats
 
 
 def main():
-
     parser = argparse.ArgumentParser()
-    parser.add_argument("--dataset_name", type=str, default="qintongli/GSM-Plus")
+
+    # GSM8K dataset defaults
+    parser.add_argument("--dataset_name", type=str, default="openai/gsm8k")
+    parser.add_argument("--dataset_config", type=str, default="main")  # gsm8k has config "main"
     parser.add_argument("--split", type=str, default="test")
 
-    parser.add_argument(
-        "--perturbation_types",
-        type=str,
-        default="all",
-        help="Comma-separated list or 'all'.",
-    )
-    parser.add_argument(
-        "--max_per_type",
-        type=int,
-        default=0,
-        help="If >0, subsample this many examples per perturbation type.",
-    )
+    # optional subsampling
+    parser.add_argument("--max_examples", type=int, default=0, help="If >0, evaluate only first N examples.")
     parser.add_argument("--seed", type=int, default=0)
 
     parser.add_argument("--out_dir", type=str, required=True)
@@ -408,9 +369,9 @@ def main():
     # generation overrides
     parser.add_argument("--dtype", type=str, default=os.getenv("DTYPE", "bfloat16"))
     parser.add_argument("--device_map", type=str, default=os.getenv("DEVICE_MAP", "auto"))
-    parser.add_argument("--max_context_tokens", type=int, default=int(os.getenv("MAX_CONTEXT_TOKENS", "4096")))
-    parser.add_argument("--max_new_tokens_hint", type=int, default=int(os.getenv("MAX_NEW_TOKENS_HINT", "2048")))
-    parser.add_argument("--max_new_tokens_sol", type=int, default=int(os.getenv("MAX_NEW_TOKENS_SOL", "2048")))
+    parser.add_argument("--max_context_tokens", type=int, default=int(os.getenv("MAX_CONTEXT_TOKENS", "8192")))
+    parser.add_argument("--max_new_tokens_hint", type=int, default=int(os.getenv("MAX_NEW_TOKENS_HINT", "256")))
+    parser.add_argument("--max_new_tokens_sol", type=int, default=int(os.getenv("MAX_NEW_TOKENS_SOL", "512")))
     parser.add_argument("--do_sample", action="store_true")
     parser.add_argument("--temperature", type=float, default=float(os.getenv("TEMPERATURE", "0.7")))
     parser.add_argument("--top_p", type=float, default=float(os.getenv("TOP_P", "0.9")))
@@ -433,27 +394,17 @@ def main():
     )
 
     # Load dataset
-    ds = load_dataset(args.dataset_name, split=args.split)
+    ds = load_dataset(args.dataset_name, args.dataset_config, split=args.split)
 
-    # Choose perturbations
-    if args.perturbation_types.strip().lower() == "all":
-        wanted_pts = set(GSMPLUS_PERTURBATIONS)
-    else:
-        wanted_pts = set([p.strip() for p in args.perturbation_types.split(",") if p.strip()])
-
-    # Group indices by perturbation type
-    groups = group_indices_by_perturbation(ds)
-    selected_indices = []
-    rnd = random.Random(args.seed)
-    for pt in GSMPLUS_PERTURBATIONS:
-        if pt not in wanted_pts:
-            continue
-        idxs = groups.get(pt, [])
-        if args.max_per_type and args.max_per_type > 0 and len(idxs) > args.max_per_type:
-            idxs = idxs[:]
-            rnd.shuffle(idxs)
-            idxs = idxs[: args.max_per_type]
-        selected_indices.extend(idxs)
+    # Select indices
+    n = len(ds)
+    indices = list(range(n))
+    if args.max_examples and args.max_examples > 0:
+        indices = indices[: args.max_examples]
+    # optional shuffle
+    if args.seed and args.max_examples and args.max_examples > 0:
+        rnd = random.Random(args.seed)
+        rnd.shuffle(indices)
 
     # Pipelines
     if args.pipelines_json:
@@ -462,35 +413,26 @@ def main():
     else:
         pipelines = DEFAULT_PIPELINES
 
-    # Run
     all_results = {
-        "dataset": {"name": args.dataset_name, "split": args.split},
-        "selected": {
-            "perturbation_types": sorted(list(wanted_pts)),
-            "max_per_type": args.max_per_type,
-            "n_total": len(selected_indices),
-        },
+        "dataset": {"name": args.dataset_name, "config": args.dataset_config, "split": args.split},
+        "selected": {"max_examples": args.max_examples, "n_total": len(indices), "seed": args.seed},
         "gen_cfg": cfg.__dict__,
         "pipelines": pipelines,
         "aggregate": {},
     }
 
     for pipe in pipelines:
-        stats, by_pt = run_pipeline_on_indices(
+        stats_ = run_pipeline_on_indices(
             dataset=ds,
-            indices=selected_indices,
+            indices=indices,
             pipeline=pipe,
             cfg=cfg,
             out_jsonl_path=records_path,
             resume=args.resume,
-            seed=args.seed,
         )
-        all_results["aggregate"][pipe["name"]] = {
-            "overall": stats,
-            "by_perturbation_type": by_pt,
-        }
+        all_results["aggregate"][pipe["name"]] = {"overall": stats_}
 
-        # Save summary after each pipeline (so you keep partial results if interrupted)
+        # Save summary after each pipeline
         with open(summary_path, "w", encoding="utf-8") as f:
             json.dump(all_results, f, indent=2, ensure_ascii=False)
 
