@@ -9,6 +9,8 @@ from dataclasses import dataclass
 from collections import defaultdict
 from fractions import Fraction
 from typing import Dict, Any, Optional, List, Tuple
+import argparse
+
 
 import torch
 from datasets import load_dataset
@@ -372,7 +374,6 @@ def run_pipeline_on_indices(
 
 
 def main():
-    import argparse
 
     parser = argparse.ArgumentParser()
     parser.add_argument("--dataset_name", type=str, default="qintongli/GSM-Plus")
