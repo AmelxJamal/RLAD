@@ -1,5 +1,6 @@
 # Dockerfile
 Dockerfile
+entrypoint.sh
 
 # Scripts directory
 scripts/
