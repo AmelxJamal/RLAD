@@ -1,5 +1,10 @@
 [
-    {"name":"baseline","hint_model_id":"Qwen/Qwen3-4B","solver_model_id":"Qwen/Qwen3-1.7B"},
-    {"name":"rlad_main","hint_model_id":"CMU-AIRe/RLAD-Hint-Gen","solver_model_id":"CMU-AIRe/RLAD-Sol-Gen"}
+    {"name":"rlad_gen_qwen3-1.7b_sol","hint_model_id":"CMU-AIRe/RLAD-Hint-Gen","solver_model_id":"Qwen/Qwen3-1.7B"},
+    {"name":"rlad_gen_qwen3-4b_sol","hint_model_id":"CMU-AIRe/RLAD-Hint-Gen","solver_model_id":"Qwen/Qwen3-4B"},
+    {"name":"rlad_gen_rlad_sol","hint_model_id":"CMU-AIRe/RLAD-Hint-Gen","solver_model_id":"CMU-AIRe/RLAD-Sol-Gen"},
+    
+    {"name":"no_gen_qwen3-1.7b_sol","hint_model_id":"","solver_model_id":"Qwen/Qwen3-1.7B"},
+    {"name":"no_gen_qwen3-4b_sol","hint_model_id":"","solver_model_id":"Qwen/Qwen3-4B"},
+    {"name":"no_gen_rlad_sol","hint_model_id":"","solver_model_id":"CMU-AIRe/RLAD-Sol-Gen"}
   ]
   

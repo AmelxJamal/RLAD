@@ -82,6 +82,8 @@ def generate_text(
     keep = max(1, max_context_tokens - max_new_tokens)
     input_ids = truncate_left(input_ids, keep_tokens=keep).to(model.device)
 
+    attention_mask = torch.ones_like(input_ids)
+
     gen_kwargs = dict(
         max_new_tokens=max_new_tokens,
         do_sample=do_sample,
@@ -89,20 +91,33 @@ def generate_text(
         pad_token_id=tokenizer.eos_token_id,
         use_cache=True,
     )
-    if do_sample:
-        gen_kwargs.update(dict(temperature=temperature, top_p=top_p))
 
-    out = model.generate(input_ids, **gen_kwargs)
+    if do_sample:
+        gen_kwargs.update(
+            temperature=temperature,
+            top_p=top_p,
+        )
+
+    out = model.generate(
+        input_ids=input_ids,
+        attention_mask=attention_mask,
+        **gen_kwargs,
+    )
+
     gen = out[0, input_ids.shape[-1]:]
     return tokenizer.decode(gen, skip_special_tokens=True).strip()
 
 
+
 def free_model(mdl, tok):
-    del mdl
-    del tok
+    if mdl is not None:
+        del mdl
+    if tok is not None:
+        del tok
     gc.collect()
     if torch.cuda.is_available():
         torch.cuda.empty_cache()
+
 
 
 def build_hint_prompt(problem: str) -> Tuple[str, str]:
@@ -128,11 +143,14 @@ def build_solver_prompt(problem: str, cheatsheet: str) -> Tuple[str, str]:
         "Give the final answer in the exact form \\boxed{<answer>}.\n"
         "If the answer is a number, do not add units.\n"
     )
-    user = f"CHEATSHEET:\n{cheatsheet}\n\nPROBLEM:\n{problem}\n"
+    if not cheatsheet.strip():
+        user = f"CHEATSHEET: Not Provided\nPROBLEM:\n{problem}\n"
+    else:
+        user = f"CHEATSHEET:\n{cheatsheet}\n\nPROBLEM:\n{problem}\n"
     return system, user
 
 
-# GSM8K answers are numeric; we keep your numeric extraction approach.
+# GSM8K answers are numeric;
 _BOX_RE = re.compile(r"\\boxed\{([^}]*)\}")
 _NUM_RE = re.compile(r"(-?\d[\d,]*\.?\d*(?:/\d[\d,]*\.?\d*)?)")
 
@@ -217,6 +235,8 @@ class GenConfig:
 
 
 def load_model_and_tokenizer(model_id: str, cfg: GenConfig):
+    if not model_id or model_id.strip() == "":
+        return None, None
     tok = AutoTokenizer.from_pretrained(model_id, trust_remote_code=True)
     mdl = AutoModelForCausalLM.from_pretrained(
         model_id,
@@ -262,6 +282,7 @@ def run_pipeline_on_indices(
     stats = {
         "n": 0,
         "correct": 0,
+        "truncated": 0,
         "parse_fail": 0,
         "no_boxed": 0,
     }
@@ -278,20 +299,22 @@ def run_pipeline_on_indices(
 
             # hint
             hs, hu = build_hint_prompt(question)
-            try:
-                cheatsheet = generate_text(
-                    hint_model, hint_tok, hs, hu,
-                    max_context_tokens=cfg.max_context_tokens,
-                    max_new_tokens=cfg.max_new_tokens_hint,
-                    do_sample=cfg.do_sample,
-                    temperature=cfg.temperature,
-                    top_p=cfg.top_p,
-                )
-            except torch.cuda.OutOfMemoryError:
-                if torch.cuda.is_available():
-                    torch.cuda.empty_cache()
-                cheatsheet = ""
-
+            cheatsheet = ""
+            if hint_model is not None:
+                try:
+                    cheatsheet = generate_text(
+                        hint_model, hint_tok, hs, hu,
+                        max_context_tokens=cfg.max_context_tokens,
+                        max_new_tokens=cfg.max_new_tokens_hint,
+                        do_sample=cfg.do_sample,
+                        temperature=cfg.temperature,
+                        top_p=cfg.top_p,
+                    )
+                except torch.cuda.OutOfMemoryError:
+                    if torch.cuda.is_available():
+                        torch.cuda.empty_cache()
+                    cheatsheet = ""
+            
             # solve
             ss, su = build_solver_prompt(question, cheatsheet)
             try:
@@ -307,6 +330,11 @@ def run_pipeline_on_indices(
                 if torch.cuda.is_available():
                     torch.cuda.empty_cache()
                 solver_out = ""
+            
+            #Check if the solution is truncated due to max_new_tokens limit
+            if solver_out and not re.search(_BOX_RE, solver_out):
+                stats["truncated"] += 1
+                continue
 
             correct, info = is_correct(solver_out, gt_full)
 
@@ -339,7 +367,189 @@ def run_pipeline_on_indices(
     free_model(hint_model, hint_tok)
     free_model(sol_model, sol_tok)
 
+    # We compute accuracy only over attempted (non-truncated) examples
     stats["acc"] = (stats["correct"] / stats["n"]) if stats["n"] else 0.0
+    return stats
+
+
+def run_all_pipelines_eff(
+    *,
+    dataset,
+    indices: List[int],
+    pipelines,  # Dict[Tuple[Optional[str], str], str]  (hint_id, solver_id) -> pipeline_name
+    hint_ids: List[Optional[str]],
+    solver_ids: List[str],
+    cfg: GenConfig,
+    out_jsonl_path: str,
+    resume: bool,
+):
+    # Resume support: skip (pipeline_name, row_idx) already written
+    done = set()
+    if resume and os.path.exists(out_jsonl_path):
+        with open(out_jsonl_path, "r", encoding="utf-8") as f:
+            for line in f:
+                try:
+                    obj = json.loads(line)
+                    done.add((obj.get("pipeline"), obj.get("row_idx")))
+                except Exception:
+                    pass
+
+    # Filter to the actually-used pairs (avoid wasted work)
+    used_pairs = []
+    used_hint_ids = set()
+    used_solver_ids = set()
+    for (hint_id, solver_id), pipe_name in pipelines.items():
+        used_pairs.append((hint_id, solver_id, pipe_name))
+        used_hint_ids.add(hint_id)
+        used_solver_ids.add(solver_id)
+
+    # Load only unique hint models that are actually used (skip None/"")
+    hints = {}
+    for hint_id in sorted([h for h in used_hint_ids if h and str(h).strip() != ""]):
+        print(f"Loading hint model: {hint_id}")
+        hint_model, hint_tok = load_model_and_tokenizer(hint_id, cfg)
+        hints[hint_id] = (hint_model, hint_tok)
+
+    # Load only unique solver models that are actually used
+    solvers = {}
+    for solver_id in sorted(list(used_solver_ids)):
+        print(f"Loading solver model: {solver_id}")
+        sol_model, sol_tok = load_model_and_tokenizer(solver_id, cfg)
+        solvers[solver_id] = (sol_model, sol_tok)
+
+    # Init stats
+    stats = {}
+    for _, _, pipe_name in used_pairs:
+        if pipe_name not in stats:
+            stats[pipe_name] = {
+                "n": 0,
+                "correct": 0,
+                "truncated": 0,
+                "parse_fail": 0,
+                "no_boxed": 0,
+            }
+
+    with open(out_jsonl_path, "a", encoding="utf-8") as out_f:
+        pbar = tqdm(indices, desc="All Pipelines")
+        for row_n, row_idx in enumerate(pbar):
+            # If this row is fully done (all pipelines), skip everything
+            all_done = True
+            for _, _, pipe_name in used_pairs:
+                if (pipe_name, row_idx) not in done:
+                    all_done = False
+                    break
+            if all_done:
+                pbar.set_postfix_str(f"row={row_idx} done")
+                continue
+
+            ex = dataset[row_idx]
+            question = (ex.get("question") or "").strip()
+            gt_full = (ex.get("answer") or "").strip()
+            gt_extracted = extract_gsm8k_gt(gt_full)
+
+            pbar.set_postfix_str(f"row={row_idx} sample={row_n+1}/{len(indices)}")
+
+            # --- 1) Compute cheatsheets ONCE per hint model for this row (cached only for this row) ---
+            hs, hu = build_hint_prompt(question)
+            cheatsheets = {}  # hint_id -> cheatsheet
+
+            # Ensure we also support "no hint" pipelines
+            cheatsheets[None] = ""
+            cheatsheets[""] = ""
+
+            # Only compute hints that are needed for at least one not-done pipeline at this row
+            needed_hint_ids = set()
+            for hint_id, solver_id, pipe_name in used_pairs:
+                if (pipe_name, row_idx) in done:
+                    continue
+                needed_hint_ids.add(hint_id)
+
+            for hint_id in needed_hint_ids:
+                if not hint_id or str(hint_id).strip() == "":
+                    cheatsheets[hint_id] = ""
+                    continue
+                if hint_id in cheatsheets:
+                    continue
+
+                hint_model, hint_tok = hints.get(hint_id, (None, None))
+                cheatsheet = ""
+                if hint_model is not None:
+                    try:
+                        pbar.set_postfix_str(f"row={row_idx} hint={hint_id}")
+                        cheatsheet = generate_text(
+                            hint_model, hint_tok, hs, hu,
+                            max_context_tokens=cfg.max_context_tokens,
+                            max_new_tokens=cfg.max_new_tokens_hint,
+                            do_sample=cfg.do_sample,
+                            temperature=cfg.temperature,
+                            top_p=cfg.top_p,
+                        )
+                    except torch.cuda.OutOfMemoryError:
+                        if torch.cuda.is_available():
+                            torch.cuda.empty_cache()
+                        cheatsheet = ""
+                cheatsheets[hint_id] = cheatsheet
+
+            # --- 2) Solve for each pipeline pair (reuse cheatsheet) ---
+            for hint_id, solver_id, pipe_name in used_pairs:
+                if (pipe_name, row_idx) in done:
+                    continue
+
+                sol_model, sol_tok = solvers[solver_id]
+                pbar.set_postfix_str(f"row={row_idx} pipe={pipe_name}")
+
+                ss, su = build_solver_prompt(question, cheatsheets.get(hint_id, ""))
+                try:
+                    solver_out = generate_text(
+                        sol_model, sol_tok, ss, su,
+                        max_context_tokens=cfg.max_context_tokens,
+                        max_new_tokens=cfg.max_new_tokens_sol,
+                        do_sample=cfg.do_sample,
+                        temperature=cfg.temperature,
+                        top_p=cfg.top_p,
+                    )
+                except torch.cuda.OutOfMemoryError:
+                    if torch.cuda.is_available():
+                        torch.cuda.empty_cache()
+                    solver_out = ""
+
+                # If truncated / missing boxed, count and skip logging
+                if solver_out and not re.search(_BOX_RE, solver_out):
+                    stats[pipe_name]["truncated"] += 1
+                    continue
+
+                correct, info = is_correct(solver_out, gt_full)
+
+                rec = {
+                    "ts": time.time(),
+                    "pipeline": pipe_name,
+                    "hint_model_id": hint_id,
+                    "solver_model_id": solver_id,
+                    "row_idx": row_idx,
+                    "question": question,
+                    "ground_truth_answer_full": gt_full,
+                    "ground_truth_answer": gt_extracted,
+                    "cheatsheet": cheatsheets.get(hint_id, ""),
+                    "solver_output": solver_out,
+                    "pred_extracted": info["pred_raw"],
+                    "correct": correct,
+                    "debug_numeric": info,
+                }
+                out_f.write(json.dumps(rec, ensure_ascii=False) + "\n")
+                out_f.flush()
+
+                stats[pipe_name]["n"] += 1
+                if info["pred_raw"] is None:
+                    stats[pipe_name]["parse_fail"] += 1
+                if "\\boxed" not in (solver_out or ""):
+                    stats[pipe_name]["no_boxed"] += 1
+                if correct:
+                    stats[pipe_name]["correct"] += 1
+
+    # Compute accuracy only over attempted (non-truncated) examples
+    for pipe_name, st in stats.items():
+        st["acc"] = (st["correct"] / st["n"]) if st["n"] else 0.0
+
     return stats
 
 
@@ -352,7 +562,7 @@ def main():
     parser.add_argument("--split", type=str, default="test")
 
     # optional subsampling
-    parser.add_argument("--max_examples", type=int, default=0, help="If >0, evaluate only first N examples.")
+    parser.add_argument("--max_examples", type=int, default= 200, help="Number of examples to eval; 0=all")
     parser.add_argument("--seed", type=int, default=0)
 
     parser.add_argument("--out_dir", type=str, required=True)
@@ -370,8 +580,8 @@ def main():
     parser.add_argument("--dtype", type=str, default=os.getenv("DTYPE", "bfloat16"))
     parser.add_argument("--device_map", type=str, default=os.getenv("DEVICE_MAP", "auto"))
     parser.add_argument("--max_context_tokens", type=int, default=int(os.getenv("MAX_CONTEXT_TOKENS", "8192")))
-    parser.add_argument("--max_new_tokens_hint", type=int, default=int(os.getenv("MAX_NEW_TOKENS_HINT", "256")))
-    parser.add_argument("--max_new_tokens_sol", type=int, default=int(os.getenv("MAX_NEW_TOKENS_SOL", "512")))
+    parser.add_argument("--max_new_tokens_hint", type=int, default=int(os.getenv("MAX_NEW_TOKENS_HINT", "4096")))
+    parser.add_argument("--max_new_tokens_sol", type=int, default=int(os.getenv("MAX_NEW_TOKENS_SOL", "4096")))
     parser.add_argument("--do_sample", action="store_true")
     parser.add_argument("--temperature", type=float, default=float(os.getenv("TEMPERATURE", "0.7")))
     parser.add_argument("--top_p", type=float, default=float(os.getenv("TOP_P", "0.9")))
@@ -379,7 +589,7 @@ def main():
     args = parser.parse_args()
 
     ensure_dir(args.out_dir)
-    records_path = os.path.join(args.out_dir, "records.jsonl")
+    records_path = os.path.join(args.out_dir, "outputs.jsonl")
     summary_path = os.path.join(args.out_dir, "summary.json")
 
     cfg = GenConfig(
@@ -421,16 +631,19 @@ def main():
         "aggregate": {},
     }
 
-    for pipe in pipelines:
-        stats_ = run_pipeline_on_indices(
-            dataset=ds,
-            indices=indices,
-            pipeline=pipe,
-            cfg=cfg,
-            out_jsonl_path=records_path,
-            resume=args.resume,
-        )
-        all_results["aggregate"][pipe["name"]] = {"overall": stats_}
+    stats_ = run_all_pipelines_eff(
+        dataset=ds,
+        indices=indices,
+        pipelines={ (p["hint_model_id"], p["solver_model_id"]): p["name"] for p in pipelines},
+        cfg=cfg,
+        out_jsonl_path=records_path,
+        resume=args.resume,
+        hint_ids = list(set([p["hint_model_id"] for p in pipelines])),
+        solver_ids = list(set([p["solver_model_id"] for p in pipelines]))
+    )
+
+    for pipe in [p["name"] for p in pipelines]:
+        all_results["aggregate"][pipe] = {"overall": stats_[pipe]}
 
         # Save summary after each pipeline
         with open(summary_path, "w", encoding="utf-8") as f:
