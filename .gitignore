@@ -1,0 +1,46 @@
+/runs/gsmplus_gpu_batch_size_8_max_200/
+
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+pip-wheel-metadata/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- IDE / OS ---
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# --- Data / large artifacts (adjust to your needs) ---
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.h5
+*.npz
+*.npy
+*.pkl
+*.joblib
+*.tar
+*.tar.gz
+*.zip

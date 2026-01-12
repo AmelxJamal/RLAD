@@ -1,0 +1,288 @@
+{
+  "dataset": {
+    "name": "qintongli/GSM-Plus",
+    "split": "test"
+  },
+  "selected": {
+    "perturbation_types": [
+      "digit expansion",
+      "distraction insertion",
+      "integer-decimal-fraction conversion",
+      "numerical substitution",
+      "problem understanding"
+    ],
+    "max_per_type": 16,
+    "n_total": 80
+  },
+  "gen_cfg": {
+    "dtype": "bfloat16",
+    "device_map": "auto",
+    "max_context_tokens": 8192,
+    "max_new_tokens_hint": 4096,
+    "max_new_tokens_sol": 4096,
+    "do_sample": false,
+    "temperature": 0.7,
+    "top_p": 0.9
+  },
+  "pipelines": [
+    {
+      "name": "zeroshot_solver",
+      "hint_model_id": "",
+      "solver_model_id": "Qwen/Qwen3-1.7B"
+    },
+    {
+      "name": "rlad_solver_no_hint",
+      "hint_model_id": "",
+      "solver_model_id": "CMU-AIRe/RLAD-Sol-Gen"
+    },
+    {
+      "name": "rlad_hint_zeroshot_solver",
+      "hint_model_id": "CMU-AIRe/RLAD-Hint-Gen",
+      "solver_model_id": "Qwen/Qwen3-1.7B"
+    },
+    {
+      "name": "rlad_hint_rlad_solver",
+      "hint_model_id": "CMU-AIRe/RLAD-Hint-Gen",
+      "solver_model_id": "CMU-AIRe/RLAD-Sol-Gen"
+    }
+  ],
+  "aggregate": {
+    "zeroshot_solver": {
+      "overall": {
+        "n": 80,
+        "correct": 68,
+        "parse_fail": 0,
+        "no_boxed": 7,
+        "ended_with_eos": 76,
+        "hit_max_new_tokens": 4,
+        "acc": 0.85
+      },
+      "by_perturbation_type": {
+        "problem understanding": {
+          "n": 16,
+          "correct": 13,
+          "parse_fail": 0,
+          "no_boxed": 1,
+          "ended_with_eos": 15,
+          "hit_max_new_tokens": 1,
+          "acc": 0.8125
+        },
+        "numerical substitution": {
+          "n": 16,
+          "correct": 13,
+          "parse_fail": 0,
+          "no_boxed": 4,
+          "ended_with_eos": 15,
+          "hit_max_new_tokens": 1,
+          "acc": 0.8125
+        },
+        "distraction insertion": {
+          "n": 16,
+          "correct": 15,
+          "parse_fail": 0,
+          "no_boxed": 0,
+          "ended_with_eos": 16,
+          "hit_max_new_tokens": 0,
+          "acc": 0.9375
+        },
+        "digit expansion": {
+          "n": 16,
+          "correct": 14,
+          "parse_fail": 0,
+          "no_boxed": 0,
+          "ended_with_eos": 16,
+          "hit_max_new_tokens": 0,
+          "acc": 0.875
+        },
+        "integer-decimal-fraction conversion": {
+          "n": 16,
+          "correct": 13,
+          "parse_fail": 0,
+          "no_boxed": 2,
+          "ended_with_eos": 14,
+          "hit_max_new_tokens": 2,
+          "acc": 0.8125
+        }
+      }
+    },
+    "rlad_solver_no_hint": {
+      "overall": {
+        "n": 80,
+        "correct": 63,
+        "parse_fail": 0,
+        "no_boxed": 5,
+        "ended_with_eos": 73,
+        "hit_max_new_tokens": 7,
+        "acc": 0.7875
+      },
+      "by_perturbation_type": {
+        "problem understanding": {
+          "n": 16,
+          "correct": 14,
+          "parse_fail": 0,
+          "no_boxed": 1,
+          "ended_with_eos": 15,
+          "hit_max_new_tokens": 1,
+          "acc": 0.875
+        },
+        "numerical substitution": {
+          "n": 16,
+          "correct": 11,
+          "parse_fail": 0,
+          "no_boxed": 2,
+          "ended_with_eos": 13,
+          "hit_max_new_tokens": 3,
+          "acc": 0.6875
+        },
+        "distraction insertion": {
+          "n": 16,
+          "correct": 13,
+          "parse_fail": 0,
+          "no_boxed": 1,
+          "ended_with_eos": 15,
+          "hit_max_new_tokens": 1,
+          "acc": 0.8125
+        },
+        "digit expansion": {
+          "n": 16,
+          "correct": 15,
+          "parse_fail": 0,
+          "no_boxed": 0,
+          "ended_with_eos": 16,
+          "hit_max_new_tokens": 0,
+          "acc": 0.9375
+        },
+        "integer-decimal-fraction conversion": {
+          "n": 16,
+          "correct": 10,
+          "parse_fail": 0,
+          "no_boxed": 1,
+          "ended_with_eos": 14,
+          "hit_max_new_tokens": 2,
+          "acc": 0.625
+        }
+      }
+    },
+    "rlad_hint_zeroshot_solver": {
+      "overall": {
+        "n": 80,
+        "correct": 66,
+        "parse_fail": 0,
+        "no_boxed": 6,
+        "ended_with_eos": 75,
+        "hit_max_new_tokens": 5,
+        "acc": 0.825
+      },
+      "by_perturbation_type": {
+        "problem understanding": {
+          "n": 16,
+          "correct": 14,
+          "parse_fail": 0,
+          "no_boxed": 1,
+          "ended_with_eos": 15,
+          "hit_max_new_tokens": 1,
+          "acc": 0.875
+        },
+        "numerical substitution": {
+          "n": 16,
+          "correct": 10,
+          "parse_fail": 0,
+          "no_boxed": 4,
+          "ended_with_eos": 13,
+          "hit_max_new_tokens": 3,
+          "acc": 0.625
+        },
+        "distraction insertion": {
+          "n": 16,
+          "correct": 14,
+          "parse_fail": 0,
+          "no_boxed": 0,
+          "ended_with_eos": 16,
+          "hit_max_new_tokens": 0,
+          "acc": 0.875
+        },
+        "digit expansion": {
+          "n": 16,
+          "correct": 15,
+          "parse_fail": 0,
+          "no_boxed": 0,
+          "ended_with_eos": 16,
+          "hit_max_new_tokens": 0,
+          "acc": 0.9375
+        },
+        "integer-decimal-fraction conversion": {
+          "n": 16,
+          "correct": 13,
+          "parse_fail": 0,
+          "no_boxed": 1,
+          "ended_with_eos": 15,
+          "hit_max_new_tokens": 1,
+          "acc": 0.8125
+        }
+      }
+    },
+    "rlad_hint_rlad_solver": {
+      "overall": {
+        "n": 80,
+        "correct": 67,
+        "parse_fail": 0,
+        "no_boxed": 6,
+        "ended_with_eos": 74,
+        "hit_max_new_tokens": 6,
+        "acc": 0.8375
+      },
+      "by_perturbation_type": {
+        "problem understanding": {
+          "n": 16,
+          "correct": 14,
+          "parse_fail": 0,
+          "no_boxed": 0,
+          "ended_with_eos": 16,
+          "hit_max_new_tokens": 0,
+          "acc": 0.875
+        },
+        "numerical substitution": {
+          "n": 16,
+          "correct": 12,
+          "parse_fail": 0,
+          "no_boxed": 2,
+          "ended_with_eos": 14,
+          "hit_max_new_tokens": 2,
+          "acc": 0.75
+        },
+        "distraction insertion": {
+          "n": 16,
+          "correct": 14,
+          "parse_fail": 0,
+          "no_boxed": 1,
+          "ended_with_eos": 15,
+          "hit_max_new_tokens": 1,
+          "acc": 0.875
+        },
+        "digit expansion": {
+          "n": 16,
+          "correct": 16,
+          "parse_fail": 0,
+          "no_boxed": 0,
+          "ended_with_eos": 16,
+          "hit_max_new_tokens": 0,
+          "acc": 1.0
+        },
+        "integer-decimal-fraction conversion": {
+          "n": 16,
+          "correct": 11,
+          "parse_fail": 0,
+          "no_boxed": 3,
+          "ended_with_eos": 13,
+          "hit_max_new_tokens": 3,
+          "acc": 0.6875
+        }
+      }
+    }
+  },
+  "indices_path": "runs/gsmplus_gpu_batch_size_8_max_16/selected_indices.json",
+  "records_path": "runs/gsmplus_gpu_batch_size_8_max_16/records.jsonl",
+  "hint_caches": {
+    "CMU-AIRe/RLAD-Hint-Gen": "runs/gsmplus_gpu_batch_size_8_max_16/hints_CMU-AIRe__RLAD-Hint-Gen.jsonl"
+  }
+}
