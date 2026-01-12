@@ -610,7 +610,7 @@ def main():
     n = len(ds)
     indices = list(range(n))
     if args.max_examples and args.max_examples > 0:
-        indices = indices[: args.max_examples]
+        indices = indices[177: args.max_examples]
     # optional shuffle
     if args.seed and args.max_examples and args.max_examples > 0:
         rnd = random.Random(args.seed)
