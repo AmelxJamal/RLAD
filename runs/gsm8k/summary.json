@@ -6,7 +6,7 @@
   },
   "selected": {
     "max_examples": 200,
-    "n_total": 23,
+    "n_total": 200,
     "seed": 0
   },
   "gen_cfg": {
@@ -54,62 +54,62 @@
   "aggregate": {
     "rlad_gen_qwen3-1.7b_sol": {
       "overall": {
-        "n": 23,
-        "correct": 20,
-        "truncated": 0,
+        "n": 186,
+        "correct": 170,
+        "truncated": 12,
         "parse_fail": 0,
         "no_boxed": 0,
-        "acc": 0.8695652173913043
+        "accuracy": 0.9139784946236559
       }
     },
     "rlad_gen_qwen3-4b_sol": {
       "overall": {
-        "n": 22,
-        "correct": 21,
-        "truncated": 1,
+        "n": 191,
+        "correct": 186,
+        "truncated": 7,
         "parse_fail": 0,
         "no_boxed": 0,
-        "acc": 0.9545454545454546
+        "accuracy": 0.9738219895287958
       }
     },
     "rlad_gen_rlad_sol": {
       "overall": {
-        "n": 21,
-        "correct": 19,
-        "truncated": 2,
+        "n": 186,
+        "correct": 177,
+        "truncated": 12,
         "parse_fail": 0,
         "no_boxed": 0,
-        "acc": 0.9047619047619048
+        "accuracy": 0.9516129032258065
       }
     },
     "no_gen_qwen3-1.7b_sol": {
       "overall": {
-        "n": 21,
-        "correct": 20,
-        "truncated": 2,
+        "n": 190,
+        "correct": 179,
+        "truncated": 8,
         "parse_fail": 0,
         "no_boxed": 0,
-        "acc": 0.9523809523809523
+        "accuracy": 0.9421052631578948
       }
     },
     "no_gen_qwen3-4b_sol": {
       "overall": {
-        "n": 23,
-        "correct": 21,
-        "truncated": 0,
+        "n": 191,
+        "correct": 187,
+        "truncated": 7,
         "parse_fail": 0,
         "no_boxed": 0,
-        "acc": 0.9130434782608695
+        "accuracy": 0.9790575916230366
       }
     },
     "no_gen_rlad_sol": {
       "overall": {
-        "n": 21,
-        "correct": 20,
-        "truncated": 2,
+        "n": 186,
+        "correct": 174,
+        "truncated": 12,
         "parse_fail": 0,
         "no_boxed": 0,
-        "acc": 0.9523809523809523
+        "accuracy": 0.9354838709677419
       }
     }
   }
