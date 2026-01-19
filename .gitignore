@@ -1,6 +1,7 @@
 # Dockerfile
 Dockerfile
 entrypoint.sh
+.aliases
 
 # Scripts directory
 scripts/
