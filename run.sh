@@ -37,6 +37,29 @@ cd /mnt/lts4/scratch/home/abdelrah/RLAD
 
 # python eval_gsmplus.py --out_dir runs/gsmplus_gpu_batch_size_8_max_16 --max_per_type 16 --log_gpu_stats --batch_size 8
 
-python eval_gsmplus.py \
- --out_dir runs/gsmplus_gpu_batch_size_8_max_200 \
- --max_per_type 200 --log_gpu_stats --batch_size 8
+# python eval_gsmplus.py \
+#  --out_dir runs/gsmplus_gpu_batch_size_8_max_200 \
+#  --max_per_type 200 --log_gpu_stats --batch_size 8
+
+
+# python eval_gsmplus.py \
+#  --out_dir runs/gsmplus_gpu_batch_size_8_max_200_temperature_0.0 \
+#  --max_per_type 200 --log_gpu_stats --batch_size 8 --temperature 0.0
+
+
+# python eval_aime25I.py \
+#  --out_dir runs/aime25I \
+#  --n_list 1,4 \
+#  --temperature 0.6 \
+#  --top_p 1.0 \
+#  --batch_size 8
+
+python eval_aime25I.py \
+ --out_dir runs/aime25I_max_context_tokens_32768_max_new_tokens_sol_8192_max_new_tokens_hint_1024 \
+ --n_list 1,4 \
+ --temperature 0.6 \
+ --top_p 1.0 \
+ --batch_size 1 \
+ --max_context_tokens 32768 \
+ --max_new_tokens_sol 8192 \
+ --max_new_tokens_hint 1024 \
