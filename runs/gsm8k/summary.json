@@ -1,0 +1,116 @@
+{
+  "dataset": {
+    "name": "openai/gsm8k",
+    "config": "main",
+    "split": "test"
+  },
+  "selected": {
+    "max_examples": 200,
+    "n_total": 200,
+    "seed": 0
+  },
+  "gen_cfg": {
+    "dtype": "bfloat16",
+    "device_map": "auto",
+    "max_context_tokens": 8192,
+    "max_new_tokens_hint": 4096,
+    "max_new_tokens_sol": 4096,
+    "do_sample": false,
+    "temperature": 0.7,
+    "top_p": 0.9
+  },
+  "pipelines": [
+    {
+      "name": "rlad_gen_qwen3-1.7b_sol",
+      "hint_model_id": "CMU-AIRe/RLAD-Hint-Gen",
+      "solver_model_id": "Qwen/Qwen3-1.7B"
+    },
+    {
+      "name": "rlad_gen_qwen3-4b_sol",
+      "hint_model_id": "CMU-AIRe/RLAD-Hint-Gen",
+      "solver_model_id": "Qwen/Qwen3-4B"
+    },
+    {
+      "name": "rlad_gen_rlad_sol",
+      "hint_model_id": "CMU-AIRe/RLAD-Hint-Gen",
+      "solver_model_id": "CMU-AIRe/RLAD-Sol-Gen"
+    },
+    {
+      "name": "no_gen_qwen3-1.7b_sol",
+      "hint_model_id": "",
+      "solver_model_id": "Qwen/Qwen3-1.7B"
+    },
+    {
+      "name": "no_gen_qwen3-4b_sol",
+      "hint_model_id": "",
+      "solver_model_id": "Qwen/Qwen3-4B"
+    },
+    {
+      "name": "no_gen_rlad_sol",
+      "hint_model_id": "",
+      "solver_model_id": "CMU-AIRe/RLAD-Sol-Gen"
+    }
+  ],
+  "aggregate": {
+    "rlad_gen_qwen3-1.7b_sol": {
+      "overall": {
+        "n": 186,
+        "correct": 170,
+        "truncated": 12,
+        "parse_fail": 0,
+        "no_boxed": 0,
+        "accuracy": 0.9139784946236559
+      }
+    },
+    "rlad_gen_qwen3-4b_sol": {
+      "overall": {
+        "n": 191,
+        "correct": 186,
+        "truncated": 7,
+        "parse_fail": 0,
+        "no_boxed": 0,
+        "accuracy": 0.9738219895287958
+      }
+    },
+    "rlad_gen_rlad_sol": {
+      "overall": {
+        "n": 186,
+        "correct": 177,
+        "truncated": 12,
+        "parse_fail": 0,
+        "no_boxed": 0,
+        "accuracy": 0.9516129032258065
+      }
+    },
+    "no_gen_qwen3-1.7b_sol": {
+      "overall": {
+        "n": 190,
+        "correct": 179,
+        "truncated": 8,
+        "parse_fail": 0,
+        "no_boxed": 0,
+        "accuracy": 0.9421052631578948
+      }
+    },
+    "no_gen_qwen3-4b_sol": {
+      "overall": {
+        "n": 191,
+        "correct": 187,
+        "truncated": 7,
+        "parse_fail": 0,
+        "no_boxed": 0,
+        "accuracy": 0.9790575916230366
+      }
+    },
+    "no_gen_rlad_sol": {
+      "overall": {
+        "n": 186,
+        "correct": 174,
+        "truncated": 12,
+        "parse_fail": 0,
+        "no_boxed": 0,
+        "accuracy": 0.9354838709677419
+      }
+    }
+  }
+}
