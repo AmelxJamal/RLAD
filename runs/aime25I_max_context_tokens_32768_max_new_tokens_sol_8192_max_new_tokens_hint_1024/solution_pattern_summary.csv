@@ -1,0 +1,5 @@
+Pipeline,Total Solutions,EOS Rate,Hit Max Rate,Avg Len (Completed),Avg Len (Truncated),Boxed Rate (Completed),Boxed Rate (Truncated)
+zeroshot_solver,240,27.5%,72.5%,12939,25202,100.0%,4.0%
+rlad_solver_no_hint,240,26.7%,73.3%,13831,26401,100.0%,6.2%
+rlad_hint_zeroshot_solver,240,41.2%,58.8%,10654,26225,100.0%,1.4%
+rlad_hint_rlad_solver,240,35.4%,64.6%,13184,27202,100.0%,3.2%

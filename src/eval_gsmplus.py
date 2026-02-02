@@ -299,9 +299,8 @@ class GenConfig:
     max_new_tokens_hint: int = int(os.getenv("MAX_NEW_TOKENS_HINT", "4096"))
     max_new_tokens_sol: int = int(os.getenv("MAX_NEW_TOKENS_SOL", "4096"))
     do_sample: bool = bool(int(os.getenv("DO_SAMPLE", "0")))
-    temperature: float = float(os.getenv("TEMPERATURE", "0.7"))
-    top_p: float = float(os.getenv("TOP_P", "0.9"))
-
+    temperature: float = float(os.getenv("TEMPERATURE", "0.0"))
+    
 
 def load_model_and_tokenizer(model_id: str, cfg: GenConfig):
     tok = AutoTokenizer.from_pretrained(model_id, trust_remote_code=True)

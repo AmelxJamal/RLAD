@@ -1,0 +1,961 @@
+pipeline,row_idx,question_preview,abs_idx,sol_idx,ended_eos,hit_max,len_chars,len_words,has_boxed
+zeroshot_solver,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,0,0,True,False,8760,2055,True
+zeroshot_solver,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,0,1,True,False,5940,1323,True
+zeroshot_solver,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,0,2,True,False,6556,1504,True
+zeroshot_solver,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,0,3,True,False,5822,1325,True
+zeroshot_solver,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,1,0,True,False,8130,1840,True
+zeroshot_solver,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,1,1,True,False,6144,1503,True
+zeroshot_solver,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,1,2,True,False,6529,1486,True
+zeroshot_solver,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,1,3,True,False,5287,1195,True
+zeroshot_solver,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,2,0,True,False,5978,1372,True
+zeroshot_solver,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,2,1,True,False,5785,1356,True
+zeroshot_solver,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,2,2,True,False,6111,1393,True
+zeroshot_solver,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,2,3,True,False,5328,1185,True
+zeroshot_solver,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,3,0,True,False,7295,1685,True
+zeroshot_solver,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,3,1,True,False,6569,1483,True
+zeroshot_solver,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,3,2,True,False,7303,1702,True
+zeroshot_solver,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,3,3,True,False,5797,1309,True
+zeroshot_solver,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",0,0,True,False,19041,3984,True
+zeroshot_solver,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",0,1,False,True,23050,4580,False
+zeroshot_solver,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",0,2,True,False,17861,3705,True
+zeroshot_solver,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",0,3,False,True,19900,4212,False
+zeroshot_solver,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",1,0,False,True,19909,4152,False
+zeroshot_solver,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",1,1,True,False,18770,3987,True
+zeroshot_solver,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",1,2,False,True,21868,4556,False
+zeroshot_solver,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",1,3,False,True,19681,4212,False
+zeroshot_solver,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",2,0,False,True,21069,4342,True
+zeroshot_solver,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",2,1,False,True,22878,4694,False
+zeroshot_solver,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",2,2,False,True,21677,4505,True
+zeroshot_solver,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",2,3,False,True,20719,4288,False
+zeroshot_solver,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",3,0,True,False,20967,4442,True
+zeroshot_solver,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",3,1,False,True,21573,4482,True
+zeroshot_solver,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",3,2,False,True,21101,4166,False
+zeroshot_solver,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",3,3,False,True,21275,4376,False
+zeroshot_solver,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,0,0,True,False,10987,2290,True
+zeroshot_solver,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,0,1,True,False,15161,3200,True
+zeroshot_solver,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,0,2,True,False,14115,2949,True
+zeroshot_solver,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,0,3,False,True,20312,4554,False
+zeroshot_solver,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,1,0,True,False,20729,4481,True
+zeroshot_solver,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,1,1,True,False,16260,3428,True
+zeroshot_solver,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,1,2,True,False,11380,2499,True
+zeroshot_solver,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,1,3,True,False,17370,4238,True
+zeroshot_solver,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,2,0,True,False,12571,3007,True
+zeroshot_solver,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,2,1,True,False,16241,3427,True
+zeroshot_solver,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,2,2,False,True,20020,4580,False
+zeroshot_solver,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,2,3,True,False,15310,3356,True
+zeroshot_solver,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,3,0,True,False,16684,3803,True
+zeroshot_solver,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,3,1,True,False,13788,2969,True
+zeroshot_solver,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,3,2,True,False,15542,3508,True
+zeroshot_solver,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,3,3,True,False,16510,3677,True
+zeroshot_solver,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",0,0,False,True,23492,5083,False
+zeroshot_solver,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",0,1,False,True,23671,4799,False
+zeroshot_solver,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",0,2,True,False,16051,3418,True
+zeroshot_solver,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",0,3,True,False,17031,3649,True
+zeroshot_solver,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",1,0,False,True,20741,4432,False
+zeroshot_solver,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",1,1,False,True,21904,4575,False
+zeroshot_solver,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",1,2,True,False,17587,3731,True
+zeroshot_solver,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",1,3,True,False,16618,3630,True
+zeroshot_solver,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",2,0,False,True,22765,4603,False
+zeroshot_solver,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",2,1,True,False,19275,4127,True
+zeroshot_solver,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",2,2,True,False,20661,4341,True
+zeroshot_solver,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",2,3,False,True,22894,4386,True
+zeroshot_solver,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",3,0,True,False,14904,3200,True
+zeroshot_solver,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",3,1,True,False,17140,3726,True
+zeroshot_solver,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",3,2,False,True,22129,4622,False
+zeroshot_solver,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",3,3,True,False,16821,3611,True
+zeroshot_solver,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",0,0,False,True,26059,4803,False
+zeroshot_solver,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",0,1,False,True,26353,5050,False
+zeroshot_solver,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",0,2,False,True,26608,5297,False
+zeroshot_solver,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",0,3,False,True,23808,4629,False
+zeroshot_solver,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",1,0,False,True,24171,4802,True
+zeroshot_solver,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",1,1,False,True,26745,5210,False
+zeroshot_solver,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",1,2,False,True,26373,5491,False
+zeroshot_solver,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",1,3,False,True,24559,4830,False
+zeroshot_solver,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",2,0,False,True,24363,4657,False
+zeroshot_solver,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",2,1,False,True,24180,4630,False
+zeroshot_solver,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",2,2,False,True,25695,4884,False
+zeroshot_solver,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",2,3,True,False,26420,4982,True
+zeroshot_solver,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",3,0,False,True,26835,5230,False
+zeroshot_solver,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",3,1,True,False,23746,4687,True
+zeroshot_solver,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",3,2,False,True,25108,4748,False
+zeroshot_solver,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",3,3,False,True,23741,4500,False
+zeroshot_solver,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,0,0,True,False,10531,2247,True
+zeroshot_solver,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,0,1,True,False,11154,2395,True
+zeroshot_solver,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,0,2,True,False,8831,1950,True
+zeroshot_solver,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,0,3,True,False,10504,2172,True
+zeroshot_solver,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,1,0,True,False,7381,1628,True
+zeroshot_solver,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,1,1,True,False,8030,1703,True
+zeroshot_solver,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,1,2,False,True,22424,4759,False
+zeroshot_solver,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,1,3,True,False,12562,2792,True
+zeroshot_solver,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,2,0,True,False,8729,1810,True
+zeroshot_solver,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,2,1,True,False,10550,2292,True
+zeroshot_solver,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,2,2,True,False,9819,2107,True
+zeroshot_solver,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,2,3,True,False,11473,2522,True
+zeroshot_solver,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,3,0,True,False,8309,1806,True
+zeroshot_solver,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,3,1,True,False,12551,2618,True
+zeroshot_solver,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,3,2,True,False,8288,1761,True
+zeroshot_solver,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,3,3,True,False,6853,1466,True
+zeroshot_solver,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",0,0,False,True,32679,6363,False
+zeroshot_solver,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",0,1,False,True,33286,6628,False
+zeroshot_solver,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",0,2,False,True,34345,6727,False
+zeroshot_solver,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",0,3,False,True,33091,6487,False
+zeroshot_solver,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",1,0,True,False,27986,5578,True
+zeroshot_solver,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",1,1,False,True,31117,6078,False
+zeroshot_solver,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",1,2,False,True,34956,6798,False
+zeroshot_solver,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",1,3,False,True,33022,6490,False
+zeroshot_solver,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",2,0,False,True,32627,6429,False
+zeroshot_solver,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",2,1,False,True,33729,6597,False
+zeroshot_solver,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",2,2,False,True,34431,6744,False
+zeroshot_solver,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",2,3,False,True,30918,6058,False
+zeroshot_solver,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",3,0,False,True,32932,6472,False
+zeroshot_solver,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",3,1,False,True,33141,6368,False
+zeroshot_solver,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",3,2,False,True,32892,6653,False
+zeroshot_solver,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",3,3,False,True,32706,6225,False
+zeroshot_solver,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,0,0,False,True,19371,4046,False
+zeroshot_solver,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,0,1,False,True,20729,4296,False
+zeroshot_solver,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,0,2,False,True,19751,4077,False
+zeroshot_solver,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,0,3,True,False,12257,2565,True
+zeroshot_solver,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,1,0,False,True,21332,4415,False
+zeroshot_solver,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,1,1,True,False,15426,3448,True
+zeroshot_solver,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,1,2,False,True,19709,4086,False
+zeroshot_solver,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,1,3,True,False,21210,4453,True
+zeroshot_solver,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,2,0,False,True,20744,4122,False
+zeroshot_solver,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,2,1,False,True,20998,4511,False
+zeroshot_solver,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,2,2,False,True,20140,4045,False
+zeroshot_solver,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,2,3,False,True,19453,4293,False
+zeroshot_solver,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,3,0,True,False,14338,3122,True
+zeroshot_solver,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,3,1,False,True,20351,4240,False
+zeroshot_solver,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,3,2,True,False,18327,3812,True
+zeroshot_solver,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,3,3,False,True,24666,5100,True
+zeroshot_solver,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,0,0,False,True,20140,4192,False
+zeroshot_solver,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,0,1,False,True,19288,4035,False
+zeroshot_solver,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,0,2,False,True,18494,3999,False
+zeroshot_solver,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,0,3,False,True,24339,4923,False
+zeroshot_solver,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,1,0,False,True,20366,4414,False
+zeroshot_solver,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,1,1,False,True,21758,4649,False
+zeroshot_solver,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,1,2,False,True,23124,4642,False
+zeroshot_solver,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,1,3,False,True,19003,4162,False
+zeroshot_solver,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,2,0,False,True,21800,4568,False
+zeroshot_solver,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,2,1,False,True,22158,4511,False
+zeroshot_solver,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,2,2,False,True,27215,5413,False
+zeroshot_solver,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,2,3,False,True,21173,4351,False
+zeroshot_solver,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,3,0,False,True,20361,4459,False
+zeroshot_solver,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,3,1,False,True,21228,4392,False
+zeroshot_solver,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,3,2,False,True,19949,4386,False
+zeroshot_solver,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,3,3,False,True,23794,4867,False
+zeroshot_solver,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,0,0,False,True,29308,5394,False
+zeroshot_solver,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,0,1,False,True,30007,5558,False
+zeroshot_solver,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,0,2,False,True,30542,5648,False
+zeroshot_solver,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,0,3,False,True,31340,5768,False
+zeroshot_solver,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,1,0,False,True,31115,5711,False
+zeroshot_solver,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,1,1,False,True,29221,5392,False
+zeroshot_solver,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,1,2,False,True,29282,5320,False
+zeroshot_solver,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,1,3,False,True,29077,5395,False
+zeroshot_solver,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,2,0,False,True,31307,5660,False
+zeroshot_solver,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,2,1,False,True,30605,5575,False
+zeroshot_solver,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,2,2,False,True,31524,5690,False
+zeroshot_solver,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,2,3,False,True,29638,5532,False
+zeroshot_solver,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,3,0,False,True,27254,5049,False
+zeroshot_solver,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,3,1,False,True,30268,5730,False
+zeroshot_solver,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,3,2,False,True,29903,5617,False
+zeroshot_solver,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,3,3,False,True,29276,5206,False
+zeroshot_solver,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",0,0,False,True,21384,4642,False
+zeroshot_solver,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",0,1,False,True,21989,4624,False
+zeroshot_solver,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",0,2,False,True,19189,4350,False
+zeroshot_solver,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",0,3,False,True,19629,4108,False
+zeroshot_solver,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",1,0,False,True,20611,4263,False
+zeroshot_solver,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",1,1,False,True,18858,4153,False
+zeroshot_solver,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",1,2,False,True,21000,4669,False
+zeroshot_solver,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",1,3,False,True,19761,4608,False
+zeroshot_solver,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",2,0,False,True,20185,4502,False
+zeroshot_solver,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",2,1,False,True,20624,4581,False
+zeroshot_solver,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",2,2,False,True,18978,4399,False
+zeroshot_solver,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",2,3,False,True,19362,4137,False
+zeroshot_solver,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",3,0,False,True,23488,5050,False
+zeroshot_solver,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",3,1,False,True,19003,4102,False
+zeroshot_solver,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",3,2,False,True,26012,4988,False
+zeroshot_solver,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",3,3,False,True,21592,4500,False
+zeroshot_solver,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,0,0,False,True,25434,6024,False
+zeroshot_solver,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,0,1,False,True,26586,6135,False
+zeroshot_solver,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,0,2,False,True,22145,5544,False
+zeroshot_solver,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,0,3,False,True,25281,6026,False
+zeroshot_solver,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,1,0,False,True,22592,5527,False
+zeroshot_solver,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,1,1,False,True,23549,5958,False
+zeroshot_solver,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,1,2,False,True,23062,5485,False
+zeroshot_solver,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,1,3,False,True,24980,6086,False
+zeroshot_solver,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,2,0,False,True,23648,5775,False
+zeroshot_solver,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,2,1,False,True,27051,6149,False
+zeroshot_solver,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,2,2,False,True,25521,5907,False
+zeroshot_solver,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,2,3,False,True,22766,5546,False
+zeroshot_solver,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,3,0,False,True,24907,6082,False
+zeroshot_solver,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,3,1,False,True,21524,5304,False
+zeroshot_solver,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,3,2,False,True,24827,6011,False
+zeroshot_solver,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,3,3,False,True,24473,5931,False
+zeroshot_solver,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,0,0,False,True,30104,5718,False
+zeroshot_solver,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,0,1,False,True,31983,5778,False
+zeroshot_solver,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,0,2,False,True,34702,6155,False
+zeroshot_solver,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,0,3,False,True,33462,5905,False
+zeroshot_solver,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,1,0,False,True,34330,6109,False
+zeroshot_solver,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,1,1,False,True,32633,5810,False
+zeroshot_solver,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,1,2,False,True,34926,6245,False
+zeroshot_solver,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,1,3,False,True,33105,5929,False
+zeroshot_solver,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,2,0,False,True,34199,6087,True
+zeroshot_solver,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,2,1,False,True,33089,5986,False
+zeroshot_solver,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,2,2,False,True,31047,5672,False
+zeroshot_solver,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,2,3,False,True,34214,5845,False
+zeroshot_solver,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,3,0,False,True,33394,6104,False
+zeroshot_solver,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,3,1,False,True,33161,6296,False
+zeroshot_solver,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,3,2,False,True,34194,6115,False
+zeroshot_solver,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,3,3,False,True,34933,6257,False
+zeroshot_solver,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",0,0,False,True,20937,4191,False
+zeroshot_solver,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",0,1,False,True,25876,5206,False
+zeroshot_solver,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",0,2,False,True,26610,5517,False
+zeroshot_solver,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",0,3,False,True,21216,4308,False
+zeroshot_solver,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",1,0,False,True,23961,5073,False
+zeroshot_solver,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",1,1,False,True,21374,4391,False
+zeroshot_solver,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",1,2,False,True,22657,4442,False
+zeroshot_solver,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",1,3,False,True,21121,4184,False
+zeroshot_solver,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",2,0,False,True,21454,4583,False
+zeroshot_solver,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",2,1,False,True,30182,5855,False
+zeroshot_solver,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",2,2,False,True,25606,5211,False
+zeroshot_solver,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",2,3,False,True,22061,4751,False
+zeroshot_solver,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",3,0,False,True,25926,5289,False
+zeroshot_solver,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",3,1,False,True,27424,5419,False
+zeroshot_solver,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",3,2,False,True,23971,4960,False
+zeroshot_solver,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",3,3,False,True,24259,5142,False
+zeroshot_solver,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",0,0,False,True,25275,5139,False
+zeroshot_solver,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",0,1,False,True,22108,4683,False
+zeroshot_solver,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",0,2,False,True,23677,5107,False
+zeroshot_solver,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",0,3,False,True,23713,5003,False
+zeroshot_solver,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",1,0,False,True,22327,4987,False
+zeroshot_solver,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",1,1,False,True,25278,5265,False
+zeroshot_solver,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",1,2,False,True,24560,5007,False
+zeroshot_solver,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",1,3,False,True,24024,5181,False
+zeroshot_solver,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",2,0,False,True,24085,5097,False
+zeroshot_solver,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",2,1,False,True,23875,5120,False
+zeroshot_solver,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",2,2,False,True,21804,4765,False
+zeroshot_solver,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",2,3,False,True,22565,4892,False
+zeroshot_solver,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",3,0,False,True,23064,5056,False
+zeroshot_solver,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",3,1,False,True,22603,4971,False
+zeroshot_solver,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",3,2,False,True,20367,4607,False
+zeroshot_solver,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",3,3,False,True,21032,4663,False
+rlad_solver_no_hint,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,0,0,True,False,7551,1686,True
+rlad_solver_no_hint,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,0,1,True,False,13848,2944,True
+rlad_solver_no_hint,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,0,2,True,False,6565,1519,True
+rlad_solver_no_hint,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,0,3,True,False,11631,2537,True
+rlad_solver_no_hint,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,1,0,True,False,8860,2042,True
+rlad_solver_no_hint,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,1,1,True,False,8555,1835,True
+rlad_solver_no_hint,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,1,2,True,False,7256,1745,True
+rlad_solver_no_hint,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,1,3,True,False,10207,2231,True
+rlad_solver_no_hint,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,2,0,True,False,5954,1340,True
+rlad_solver_no_hint,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,2,1,True,False,8299,1833,True
+rlad_solver_no_hint,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,2,2,True,False,8952,2060,True
+rlad_solver_no_hint,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,2,3,True,False,8632,1847,True
+rlad_solver_no_hint,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,3,0,True,False,9448,2001,True
+rlad_solver_no_hint,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,3,1,True,False,6612,1455,True
+rlad_solver_no_hint,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,3,2,True,False,8122,1696,True
+rlad_solver_no_hint,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,3,3,True,False,6237,1364,True
+rlad_solver_no_hint,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",0,0,False,True,23055,4550,False
+rlad_solver_no_hint,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",0,1,False,True,22415,4427,False
+rlad_solver_no_hint,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",0,2,False,True,22832,4624,False
+rlad_solver_no_hint,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",0,3,False,True,23953,4606,False
+rlad_solver_no_hint,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",1,0,False,True,24583,4771,False
+rlad_solver_no_hint,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",1,1,False,True,22284,4397,False
+rlad_solver_no_hint,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",1,2,False,True,21981,4417,False
+rlad_solver_no_hint,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",1,3,False,True,25617,4878,False
+rlad_solver_no_hint,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",2,0,False,True,22102,4459,True
+rlad_solver_no_hint,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",2,1,False,True,22435,4542,True
+rlad_solver_no_hint,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",2,2,False,True,21481,4404,True
+rlad_solver_no_hint,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",2,3,False,True,25655,4734,False
+rlad_solver_no_hint,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",3,0,False,True,21599,4289,False
+rlad_solver_no_hint,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",3,1,False,True,21223,4478,True
+rlad_solver_no_hint,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",3,2,False,True,22370,4492,False
+rlad_solver_no_hint,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",3,3,False,True,23460,4546,False
+rlad_solver_no_hint,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,0,0,True,False,16854,3616,True
+rlad_solver_no_hint,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,0,1,True,False,14513,3028,True
+rlad_solver_no_hint,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,0,2,True,False,13481,2884,True
+rlad_solver_no_hint,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,0,3,True,False,19752,4055,True
+rlad_solver_no_hint,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,1,0,True,False,17094,3736,True
+rlad_solver_no_hint,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,1,1,True,False,17328,3582,True
+rlad_solver_no_hint,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,1,2,True,False,20120,4236,True
+rlad_solver_no_hint,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,1,3,True,False,15864,3189,True
+rlad_solver_no_hint,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,2,0,True,False,17176,3533,True
+rlad_solver_no_hint,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,2,1,False,True,20158,4190,True
+rlad_solver_no_hint,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,2,2,True,False,16251,3450,True
+rlad_solver_no_hint,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,2,3,True,False,11523,2434,True
+rlad_solver_no_hint,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,3,0,True,False,18052,3578,True
+rlad_solver_no_hint,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,3,1,True,False,20007,4078,True
+rlad_solver_no_hint,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,3,2,True,False,18646,3773,True
+rlad_solver_no_hint,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,3,3,True,False,17490,3498,True
+rlad_solver_no_hint,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",0,0,False,True,21776,4472,False
+rlad_solver_no_hint,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",0,1,False,True,22716,4895,False
+rlad_solver_no_hint,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",0,2,True,False,18938,3995,True
+rlad_solver_no_hint,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",0,3,True,False,21022,4230,True
+rlad_solver_no_hint,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",1,0,False,True,22414,4551,True
+rlad_solver_no_hint,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",1,1,True,False,21231,4503,True
+rlad_solver_no_hint,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",1,2,False,True,22996,4574,True
+rlad_solver_no_hint,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",1,3,True,False,21732,4409,True
+rlad_solver_no_hint,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",2,0,False,True,22366,4607,True
+rlad_solver_no_hint,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",2,1,True,False,22003,4358,True
+rlad_solver_no_hint,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",2,2,False,True,23140,4758,True
+rlad_solver_no_hint,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",2,3,False,True,22443,4561,False
+rlad_solver_no_hint,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",3,0,True,False,20906,4253,True
+rlad_solver_no_hint,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",3,1,False,True,22150,4529,True
+rlad_solver_no_hint,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",3,2,False,True,23810,4779,False
+rlad_solver_no_hint,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",3,3,True,False,21185,4296,True
+rlad_solver_no_hint,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",0,0,False,True,24112,4586,False
+rlad_solver_no_hint,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",0,1,False,True,27374,5096,False
+rlad_solver_no_hint,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",0,2,False,True,26637,4982,False
+rlad_solver_no_hint,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",0,3,False,True,25381,5002,False
+rlad_solver_no_hint,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",1,0,False,True,26721,5130,False
+rlad_solver_no_hint,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",1,1,False,True,24432,4604,False
+rlad_solver_no_hint,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",1,2,False,True,24574,4816,False
+rlad_solver_no_hint,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",1,3,False,True,25480,4754,False
+rlad_solver_no_hint,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",2,0,False,True,20588,4362,False
+rlad_solver_no_hint,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",2,1,False,True,24745,4619,False
+rlad_solver_no_hint,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",2,2,False,True,22468,4229,False
+rlad_solver_no_hint,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",2,3,False,True,26242,4958,False
+rlad_solver_no_hint,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",3,0,False,True,22751,4309,False
+rlad_solver_no_hint,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",3,1,False,True,23584,4406,False
+rlad_solver_no_hint,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",3,2,False,True,24781,4597,False
+rlad_solver_no_hint,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",3,3,False,True,22541,4333,False
+rlad_solver_no_hint,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,0,0,True,False,11548,2390,True
+rlad_solver_no_hint,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,0,1,True,False,20717,4567,True
+rlad_solver_no_hint,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,0,2,True,False,10861,2301,True
+rlad_solver_no_hint,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,0,3,True,False,10688,2232,True
+rlad_solver_no_hint,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,1,0,True,False,7584,1632,True
+rlad_solver_no_hint,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,1,1,True,False,10200,2120,True
+rlad_solver_no_hint,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,1,2,True,False,11828,2616,True
+rlad_solver_no_hint,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,1,3,True,False,11838,2507,True
+rlad_solver_no_hint,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,2,0,True,False,12638,2683,True
+rlad_solver_no_hint,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,2,1,True,False,11117,2367,True
+rlad_solver_no_hint,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,2,2,True,False,9421,2048,True
+rlad_solver_no_hint,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,2,3,True,False,10159,2206,True
+rlad_solver_no_hint,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,3,0,True,False,10390,2159,True
+rlad_solver_no_hint,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,3,1,True,False,12159,2572,True
+rlad_solver_no_hint,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,3,2,True,False,12058,2557,True
+rlad_solver_no_hint,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,3,3,True,False,10089,2109,True
+rlad_solver_no_hint,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",0,0,False,True,34242,6616,False
+rlad_solver_no_hint,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",0,1,False,True,33904,6418,False
+rlad_solver_no_hint,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",0,2,False,True,34026,6521,False
+rlad_solver_no_hint,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",0,3,False,True,32894,6483,False
+rlad_solver_no_hint,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",1,0,False,True,34013,6481,False
+rlad_solver_no_hint,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",1,1,False,True,32847,6403,False
+rlad_solver_no_hint,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",1,2,False,True,36668,6899,False
+rlad_solver_no_hint,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",1,3,False,True,34015,6534,False
+rlad_solver_no_hint,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",2,0,False,True,33604,6502,False
+rlad_solver_no_hint,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",2,1,False,True,34855,6700,False
+rlad_solver_no_hint,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",2,2,False,True,34279,6533,False
+rlad_solver_no_hint,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",2,3,False,True,33037,6510,False
+rlad_solver_no_hint,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",3,0,False,True,32493,6304,False
+rlad_solver_no_hint,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",3,1,False,True,33703,6516,False
+rlad_solver_no_hint,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",3,2,False,True,34119,6626,False
+rlad_solver_no_hint,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",3,3,False,True,34269,6662,False
+rlad_solver_no_hint,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,0,0,True,False,13868,2975,True
+rlad_solver_no_hint,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,0,1,False,True,22544,4627,False
+rlad_solver_no_hint,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,0,2,True,False,22619,4765,True
+rlad_solver_no_hint,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,0,3,False,True,19590,4201,False
+rlad_solver_no_hint,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,1,0,True,False,13734,2831,True
+rlad_solver_no_hint,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,1,1,False,True,20479,4038,False
+rlad_solver_no_hint,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,1,2,False,True,21120,4354,False
+rlad_solver_no_hint,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,1,3,True,False,14102,3231,True
+rlad_solver_no_hint,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,2,0,True,False,16025,3329,True
+rlad_solver_no_hint,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,2,1,True,False,16031,3262,True
+rlad_solver_no_hint,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,2,2,True,False,19951,4265,True
+rlad_solver_no_hint,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,2,3,False,True,19721,4114,False
+rlad_solver_no_hint,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,3,0,True,False,18029,3761,True
+rlad_solver_no_hint,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,3,1,True,False,15808,3355,True
+rlad_solver_no_hint,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,3,2,True,False,13823,3026,True
+rlad_solver_no_hint,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,3,3,False,True,21593,4584,False
+rlad_solver_no_hint,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,0,0,False,True,23859,4925,False
+rlad_solver_no_hint,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,0,1,False,True,24218,5099,False
+rlad_solver_no_hint,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,0,2,False,True,21963,4902,False
+rlad_solver_no_hint,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,0,3,False,True,24781,5399,False
+rlad_solver_no_hint,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,1,0,False,True,22011,4802,False
+rlad_solver_no_hint,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,1,1,False,True,23664,4969,False
+rlad_solver_no_hint,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,1,2,False,True,22347,4723,False
+rlad_solver_no_hint,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,1,3,False,True,22351,4873,False
+rlad_solver_no_hint,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,2,0,False,True,27209,5497,False
+rlad_solver_no_hint,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,2,1,False,True,24085,4817,False
+rlad_solver_no_hint,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,2,2,False,True,22324,4895,False
+rlad_solver_no_hint,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,2,3,False,True,22595,4749,False
+rlad_solver_no_hint,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,3,0,False,True,22193,4992,False
+rlad_solver_no_hint,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,3,1,False,True,23654,4954,False
+rlad_solver_no_hint,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,3,2,False,True,23457,5015,False
+rlad_solver_no_hint,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,3,3,False,True,25173,5134,False
+rlad_solver_no_hint,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,0,0,False,True,31119,5608,False
+rlad_solver_no_hint,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,0,1,False,True,30057,5399,False
+rlad_solver_no_hint,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,0,2,False,True,29310,5384,False
+rlad_solver_no_hint,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,0,3,False,True,31891,5743,False
+rlad_solver_no_hint,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,1,0,False,True,31257,5577,False
+rlad_solver_no_hint,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,1,1,False,True,30318,5497,False
+rlad_solver_no_hint,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,1,2,False,True,30912,5529,False
+rlad_solver_no_hint,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,1,3,False,True,30158,5429,False
+rlad_solver_no_hint,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,2,0,False,True,30310,5541,False
+rlad_solver_no_hint,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,2,1,False,True,32282,5786,False
+rlad_solver_no_hint,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,2,2,False,True,31276,5683,False
+rlad_solver_no_hint,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,2,3,False,True,31989,5676,False
+rlad_solver_no_hint,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,3,0,False,True,30598,5529,False
+rlad_solver_no_hint,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,3,1,False,True,29910,5494,False
+rlad_solver_no_hint,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,3,2,False,True,30679,5506,False
+rlad_solver_no_hint,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,3,3,False,True,30945,5555,False
+rlad_solver_no_hint,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",0,0,False,True,21800,4532,False
+rlad_solver_no_hint,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",0,1,False,True,18908,4172,False
+rlad_solver_no_hint,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",0,2,False,True,20668,4710,False
+rlad_solver_no_hint,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",0,3,False,True,22176,4792,False
+rlad_solver_no_hint,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",1,0,False,True,22645,4481,False
+rlad_solver_no_hint,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",1,1,False,True,20629,4676,False
+rlad_solver_no_hint,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",1,2,False,True,23241,4931,False
+rlad_solver_no_hint,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",1,3,False,True,19648,4422,False
+rlad_solver_no_hint,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",2,0,False,True,22563,4601,False
+rlad_solver_no_hint,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",2,1,False,True,20689,4249,False
+rlad_solver_no_hint,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",2,2,False,True,21218,4427,False
+rlad_solver_no_hint,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",2,3,False,True,19813,4550,False
+rlad_solver_no_hint,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",3,0,False,True,18114,4163,False
+rlad_solver_no_hint,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",3,1,False,True,18777,4205,False
+rlad_solver_no_hint,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",3,2,False,True,20501,4484,False
+rlad_solver_no_hint,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",3,3,False,True,19108,4506,False
+rlad_solver_no_hint,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,0,0,False,True,24712,5772,False
+rlad_solver_no_hint,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,0,1,False,True,25998,5772,False
+rlad_solver_no_hint,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,0,2,False,True,25572,5947,False
+rlad_solver_no_hint,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,0,3,False,True,26527,5863,False
+rlad_solver_no_hint,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,1,0,False,True,28777,6289,False
+rlad_solver_no_hint,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,1,1,False,True,27379,6096,False
+rlad_solver_no_hint,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,1,2,False,True,26239,5845,False
+rlad_solver_no_hint,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,1,3,False,True,26897,6017,False
+rlad_solver_no_hint,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,2,0,False,True,24929,5791,False
+rlad_solver_no_hint,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,2,1,False,True,28554,6353,False
+rlad_solver_no_hint,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,2,2,False,True,26255,5490,False
+rlad_solver_no_hint,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,2,3,False,True,25894,5428,False
+rlad_solver_no_hint,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,3,0,False,True,25718,5970,False
+rlad_solver_no_hint,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,3,1,False,True,26511,6076,False
+rlad_solver_no_hint,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,3,2,False,True,27277,6136,False
+rlad_solver_no_hint,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,3,3,False,True,26975,5854,False
+rlad_solver_no_hint,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,0,0,False,True,34171,6185,False
+rlad_solver_no_hint,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,0,1,False,True,35314,6179,False
+rlad_solver_no_hint,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,0,2,False,True,35184,6131,False
+rlad_solver_no_hint,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,0,3,False,True,35352,6292,False
+rlad_solver_no_hint,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,1,0,False,True,35746,6199,True
+rlad_solver_no_hint,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,1,1,False,True,31372,5503,False
+rlad_solver_no_hint,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,1,2,False,True,32492,5959,False
+rlad_solver_no_hint,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,1,3,False,True,38147,6580,False
+rlad_solver_no_hint,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,2,0,False,True,33094,6018,False
+rlad_solver_no_hint,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,2,1,False,True,31761,5886,False
+rlad_solver_no_hint,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,2,2,False,True,36439,6352,False
+rlad_solver_no_hint,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,2,3,False,True,33612,5915,False
+rlad_solver_no_hint,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,3,0,False,True,33831,6049,False
+rlad_solver_no_hint,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,3,1,False,True,37280,6462,False
+rlad_solver_no_hint,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,3,2,False,True,34221,6082,False
+rlad_solver_no_hint,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,3,3,False,True,33757,6174,False
+rlad_solver_no_hint,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",0,0,False,True,26394,4969,False
+rlad_solver_no_hint,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",0,1,False,True,25771,4870,False
+rlad_solver_no_hint,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",0,2,False,True,27241,5263,False
+rlad_solver_no_hint,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",0,3,False,True,24837,4869,False
+rlad_solver_no_hint,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",1,0,False,True,25725,5120,False
+rlad_solver_no_hint,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",1,1,False,True,24444,4730,False
+rlad_solver_no_hint,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",1,2,False,True,27056,5265,False
+rlad_solver_no_hint,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",1,3,False,True,25566,4867,False
+rlad_solver_no_hint,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",2,0,False,True,30071,5691,False
+rlad_solver_no_hint,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",2,1,False,True,25624,4949,False
+rlad_solver_no_hint,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",2,2,False,True,27462,5132,False
+rlad_solver_no_hint,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",2,3,False,True,23883,4587,False
+rlad_solver_no_hint,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",3,0,False,True,26186,4986,False
+rlad_solver_no_hint,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",3,1,False,True,29495,5598,False
+rlad_solver_no_hint,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",3,2,False,True,25000,4976,False
+rlad_solver_no_hint,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",3,3,False,True,25766,5010,False
+rlad_solver_no_hint,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",0,0,False,True,24405,5157,False
+rlad_solver_no_hint,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",0,1,False,True,25255,5224,False
+rlad_solver_no_hint,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",0,2,False,True,25035,5191,False
+rlad_solver_no_hint,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",0,3,False,True,24871,5186,False
+rlad_solver_no_hint,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",1,0,False,True,23756,5011,False
+rlad_solver_no_hint,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",1,1,False,True,26231,5276,False
+rlad_solver_no_hint,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",1,2,False,True,25516,5332,False
+rlad_solver_no_hint,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",1,3,False,True,25946,5298,False
+rlad_solver_no_hint,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",2,0,False,True,25066,5200,False
+rlad_solver_no_hint,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",2,1,False,True,24600,5116,False
+rlad_solver_no_hint,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",2,2,False,True,26084,5278,False
+rlad_solver_no_hint,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",2,3,False,True,25315,5264,False
+rlad_solver_no_hint,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",3,0,False,True,22272,4681,False
+rlad_solver_no_hint,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",3,1,False,True,27357,5384,False
+rlad_solver_no_hint,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",3,2,False,True,24869,5133,False
+rlad_solver_no_hint,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",3,3,False,True,22722,4890,False
+rlad_hint_zeroshot_solver,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,0,0,True,False,5307,1116,True
+rlad_hint_zeroshot_solver,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,0,1,True,False,9297,2021,True
+rlad_hint_zeroshot_solver,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,0,2,True,False,9476,1891,True
+rlad_hint_zeroshot_solver,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,0,3,True,False,5994,1246,True
+rlad_hint_zeroshot_solver,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,1,0,True,False,4680,1015,True
+rlad_hint_zeroshot_solver,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,1,1,True,False,4874,1071,True
+rlad_hint_zeroshot_solver,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,1,2,True,False,4583,1057,True
+rlad_hint_zeroshot_solver,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,1,3,True,False,6098,1214,True
+rlad_hint_zeroshot_solver,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,2,0,True,False,7817,1945,True
+rlad_hint_zeroshot_solver,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,2,1,True,False,6582,1535,True
+rlad_hint_zeroshot_solver,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,2,2,True,False,9695,2236,True
+rlad_hint_zeroshot_solver,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,2,3,True,False,7367,1685,True
+rlad_hint_zeroshot_solver,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,3,0,True,False,9281,1983,True
+rlad_hint_zeroshot_solver,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,3,1,True,False,9190,2011,True
+rlad_hint_zeroshot_solver,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,3,2,True,False,8789,2005,True
+rlad_hint_zeroshot_solver,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,3,3,True,False,6300,1412,True
+rlad_hint_zeroshot_solver,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",0,0,False,True,21287,4507,False
+rlad_hint_zeroshot_solver,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",0,1,False,True,23000,4861,False
+rlad_hint_zeroshot_solver,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",0,2,False,True,21931,4609,False
+rlad_hint_zeroshot_solver,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",0,3,False,True,24529,5085,False
+rlad_hint_zeroshot_solver,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",1,0,False,True,22662,4659,False
+rlad_hint_zeroshot_solver,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",1,1,False,True,23021,4584,False
+rlad_hint_zeroshot_solver,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",1,2,False,True,22348,4594,False
+rlad_hint_zeroshot_solver,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",1,3,False,True,24150,4899,False
+rlad_hint_zeroshot_solver,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",2,0,False,True,23521,4702,False
+rlad_hint_zeroshot_solver,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",2,1,False,True,22162,4452,False
+rlad_hint_zeroshot_solver,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",2,2,False,True,23134,4640,False
+rlad_hint_zeroshot_solver,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",2,3,False,True,22644,4612,True
+rlad_hint_zeroshot_solver,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",3,0,False,True,23805,4696,False
+rlad_hint_zeroshot_solver,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",3,1,True,False,4628,803,True
+rlad_hint_zeroshot_solver,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",3,2,False,True,21731,4516,False
+rlad_hint_zeroshot_solver,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",3,3,True,False,4020,950,True
+rlad_hint_zeroshot_solver,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,0,0,True,False,14114,2975,True
+rlad_hint_zeroshot_solver,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,0,1,True,False,20525,4342,True
+rlad_hint_zeroshot_solver,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,0,2,True,False,15748,3559,True
+rlad_hint_zeroshot_solver,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,0,3,True,False,23483,5102,True
+rlad_hint_zeroshot_solver,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,1,0,True,False,2774,654,True
+rlad_hint_zeroshot_solver,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,1,1,True,False,2244,466,True
+rlad_hint_zeroshot_solver,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,1,2,False,True,24436,4888,False
+rlad_hint_zeroshot_solver,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,1,3,False,True,26093,5326,False
+rlad_hint_zeroshot_solver,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,2,0,True,False,11360,2333,True
+rlad_hint_zeroshot_solver,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,2,1,True,False,21325,4618,True
+rlad_hint_zeroshot_solver,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,2,2,True,False,17826,3697,True
+rlad_hint_zeroshot_solver,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,2,3,True,False,11878,2607,True
+rlad_hint_zeroshot_solver,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,3,0,True,False,18824,3923,True
+rlad_hint_zeroshot_solver,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,3,1,False,True,24459,5077,False
+rlad_hint_zeroshot_solver,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,3,2,True,False,16855,3547,True
+rlad_hint_zeroshot_solver,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,3,3,False,True,24678,5107,False
+rlad_hint_zeroshot_solver,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",0,0,True,False,15861,3224,True
+rlad_hint_zeroshot_solver,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",0,1,True,False,20062,4087,True
+rlad_hint_zeroshot_solver,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",0,2,True,False,11860,2531,True
+rlad_hint_zeroshot_solver,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",0,3,True,False,17241,3751,True
+rlad_hint_zeroshot_solver,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",1,0,False,True,21891,4600,False
+rlad_hint_zeroshot_solver,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",1,1,False,True,22884,4958,False
+rlad_hint_zeroshot_solver,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",1,2,True,False,15432,3432,True
+rlad_hint_zeroshot_solver,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",1,3,True,False,14107,2880,True
+rlad_hint_zeroshot_solver,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",2,0,True,False,12195,2624,True
+rlad_hint_zeroshot_solver,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",2,1,True,False,15067,3087,True
+rlad_hint_zeroshot_solver,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",2,2,True,False,14349,3011,True
+rlad_hint_zeroshot_solver,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",2,3,True,False,17302,3540,True
+rlad_hint_zeroshot_solver,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",3,0,True,False,15758,3372,True
+rlad_hint_zeroshot_solver,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",3,1,True,False,15450,3352,True
+rlad_hint_zeroshot_solver,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",3,2,True,False,19005,4044,True
+rlad_hint_zeroshot_solver,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",3,3,True,False,19864,4157,True
+rlad_hint_zeroshot_solver,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",0,0,True,False,22184,4524,True
+rlad_hint_zeroshot_solver,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",0,1,False,True,24751,4661,False
+rlad_hint_zeroshot_solver,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",0,2,False,True,24029,4584,False
+rlad_hint_zeroshot_solver,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",0,3,False,True,26234,5062,False
+rlad_hint_zeroshot_solver,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",1,0,False,True,25366,4808,False
+rlad_hint_zeroshot_solver,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",1,1,True,False,20512,4102,True
+rlad_hint_zeroshot_solver,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",1,2,False,True,26202,5031,False
+rlad_hint_zeroshot_solver,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",1,3,False,True,23383,4875,False
+rlad_hint_zeroshot_solver,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",2,0,False,True,28995,5541,False
+rlad_hint_zeroshot_solver,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",2,1,False,True,26833,5050,False
+rlad_hint_zeroshot_solver,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",2,2,True,False,24177,4586,True
+rlad_hint_zeroshot_solver,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",2,3,False,True,22066,4423,False
+rlad_hint_zeroshot_solver,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",3,0,False,True,24873,4550,False
+rlad_hint_zeroshot_solver,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",3,1,True,False,1777,340,True
+rlad_hint_zeroshot_solver,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",3,2,False,True,23442,4372,False
+rlad_hint_zeroshot_solver,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",3,3,True,False,23877,4560,True
+rlad_hint_zeroshot_solver,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,0,0,True,False,15922,3371,True
+rlad_hint_zeroshot_solver,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,0,1,True,False,14406,3224,True
+rlad_hint_zeroshot_solver,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,0,2,True,False,20050,4516,True
+rlad_hint_zeroshot_solver,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,0,3,True,False,15118,3325,True
+rlad_hint_zeroshot_solver,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,1,0,True,False,9701,2198,True
+rlad_hint_zeroshot_solver,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,1,1,True,False,6219,1385,True
+rlad_hint_zeroshot_solver,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,1,2,True,False,1535,387,True
+rlad_hint_zeroshot_solver,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,1,3,True,False,7233,1617,True
+rlad_hint_zeroshot_solver,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,2,0,True,False,12958,2870,True
+rlad_hint_zeroshot_solver,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,2,1,True,False,18486,4029,True
+rlad_hint_zeroshot_solver,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,2,2,True,False,9296,2045,True
+rlad_hint_zeroshot_solver,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,2,3,True,False,11224,2494,True
+rlad_hint_zeroshot_solver,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,3,0,True,False,6773,1512,True
+rlad_hint_zeroshot_solver,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,3,1,False,True,21798,4733,False
+rlad_hint_zeroshot_solver,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,3,2,True,False,7560,1688,True
+rlad_hint_zeroshot_solver,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,3,3,True,False,5647,1240,True
+rlad_hint_zeroshot_solver,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",0,0,False,True,35503,6826,False
+rlad_hint_zeroshot_solver,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",0,1,False,True,30079,6001,False
+rlad_hint_zeroshot_solver,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",0,2,False,True,29574,5797,False
+rlad_hint_zeroshot_solver,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",0,3,False,True,34859,6872,False
+rlad_hint_zeroshot_solver,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",1,0,True,False,6041,1029,True
+rlad_hint_zeroshot_solver,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",1,1,False,True,32505,6418,False
+rlad_hint_zeroshot_solver,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",1,2,True,False,23598,4591,True
+rlad_hint_zeroshot_solver,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",1,3,False,True,30248,5925,False
+rlad_hint_zeroshot_solver,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",2,0,True,False,3292,607,True
+rlad_hint_zeroshot_solver,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",2,1,True,False,2673,500,True
+rlad_hint_zeroshot_solver,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",2,2,True,False,2816,579,True
+rlad_hint_zeroshot_solver,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",2,3,True,False,3591,656,True
+rlad_hint_zeroshot_solver,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",3,0,False,True,31437,6176,False
+rlad_hint_zeroshot_solver,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",3,1,False,True,31401,6186,False
+rlad_hint_zeroshot_solver,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",3,2,False,True,33280,6552,False
+rlad_hint_zeroshot_solver,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",3,3,False,True,30966,5995,False
+rlad_hint_zeroshot_solver,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,0,0,True,False,7247,1556,True
+rlad_hint_zeroshot_solver,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,0,1,True,False,8566,1887,True
+rlad_hint_zeroshot_solver,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,0,2,False,True,21367,4314,False
+rlad_hint_zeroshot_solver,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,0,3,True,False,12090,2620,True
+rlad_hint_zeroshot_solver,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,1,0,False,True,17638,3722,False
+rlad_hint_zeroshot_solver,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,1,1,False,True,19593,3942,False
+rlad_hint_zeroshot_solver,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,1,2,False,True,18473,4158,False
+rlad_hint_zeroshot_solver,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,1,3,False,True,19171,4186,False
+rlad_hint_zeroshot_solver,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,2,0,True,False,9695,2196,True
+rlad_hint_zeroshot_solver,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,2,1,False,True,20821,4460,False
+rlad_hint_zeroshot_solver,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,2,2,False,True,21164,4250,False
+rlad_hint_zeroshot_solver,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,2,3,True,False,14407,3156,True
+rlad_hint_zeroshot_solver,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,3,0,False,True,22632,4689,False
+rlad_hint_zeroshot_solver,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,3,1,False,True,21525,4353,False
+rlad_hint_zeroshot_solver,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,3,2,False,True,21347,4514,False
+rlad_hint_zeroshot_solver,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,3,3,False,True,20881,4460,False
+rlad_hint_zeroshot_solver,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,0,0,False,True,27814,5660,False
+rlad_hint_zeroshot_solver,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,0,1,False,True,28143,5495,False
+rlad_hint_zeroshot_solver,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,0,2,False,True,27289,5461,False
+rlad_hint_zeroshot_solver,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,0,3,False,True,23034,4696,False
+rlad_hint_zeroshot_solver,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,1,0,True,False,20043,4112,True
+rlad_hint_zeroshot_solver,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,1,1,False,True,23241,5404,False
+rlad_hint_zeroshot_solver,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,1,2,False,True,25303,5359,False
+rlad_hint_zeroshot_solver,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,1,3,False,True,25781,5369,False
+rlad_hint_zeroshot_solver,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,2,0,False,True,23375,4986,False
+rlad_hint_zeroshot_solver,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,2,1,False,True,22159,4643,False
+rlad_hint_zeroshot_solver,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,2,2,False,True,23094,4909,False
+rlad_hint_zeroshot_solver,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,2,3,False,True,22036,4554,False
+rlad_hint_zeroshot_solver,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,3,0,False,True,20414,4527,False
+rlad_hint_zeroshot_solver,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,3,1,False,True,22073,4613,False
+rlad_hint_zeroshot_solver,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,3,2,False,True,22424,4865,False
+rlad_hint_zeroshot_solver,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,3,3,False,True,23423,4825,False
+rlad_hint_zeroshot_solver,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,0,0,False,True,31929,5837,False
+rlad_hint_zeroshot_solver,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,0,1,True,False,4570,882,True
+rlad_hint_zeroshot_solver,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,0,2,True,False,2957,562,True
+rlad_hint_zeroshot_solver,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,0,3,True,False,3312,666,True
+rlad_hint_zeroshot_solver,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,1,0,False,True,29988,5585,False
+rlad_hint_zeroshot_solver,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,1,1,False,True,30945,5729,False
+rlad_hint_zeroshot_solver,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,1,2,False,True,30976,5800,False
+rlad_hint_zeroshot_solver,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,1,3,False,True,30636,5608,False
+rlad_hint_zeroshot_solver,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,2,0,False,True,32330,5922,False
+rlad_hint_zeroshot_solver,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,2,1,False,True,31383,5744,False
+rlad_hint_zeroshot_solver,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,2,2,False,True,31723,5899,False
+rlad_hint_zeroshot_solver,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,2,3,False,True,33186,5987,False
+rlad_hint_zeroshot_solver,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,3,0,False,True,31240,5771,False
+rlad_hint_zeroshot_solver,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,3,1,False,True,29784,5528,False
+rlad_hint_zeroshot_solver,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,3,2,True,False,2972,592,True
+rlad_hint_zeroshot_solver,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,3,3,False,True,32128,5839,False
+rlad_hint_zeroshot_solver,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",0,0,True,False,4554,953,True
+rlad_hint_zeroshot_solver,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",0,1,False,True,20879,4634,False
+rlad_hint_zeroshot_solver,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",0,2,False,True,20248,4185,False
+rlad_hint_zeroshot_solver,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",0,3,False,True,22385,4485,False
+rlad_hint_zeroshot_solver,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",1,0,True,False,5140,1037,True
+rlad_hint_zeroshot_solver,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",1,1,True,False,3633,782,True
+rlad_hint_zeroshot_solver,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",1,2,True,False,4163,860,True
+rlad_hint_zeroshot_solver,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",1,3,True,False,2685,587,True
+rlad_hint_zeroshot_solver,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",2,0,False,True,20947,4465,False
+rlad_hint_zeroshot_solver,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",2,1,False,True,23129,4706,False
+rlad_hint_zeroshot_solver,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",2,2,False,True,23262,4646,False
+rlad_hint_zeroshot_solver,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",2,3,False,True,21676,4264,False
+rlad_hint_zeroshot_solver,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",3,0,False,True,26340,5246,False
+rlad_hint_zeroshot_solver,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",3,1,False,True,22885,4597,False
+rlad_hint_zeroshot_solver,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",3,2,False,True,25334,5100,False
+rlad_hint_zeroshot_solver,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",3,3,False,True,22948,4885,False
+rlad_hint_zeroshot_solver,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,0,0,False,True,26011,6131,False
+rlad_hint_zeroshot_solver,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,0,1,False,True,25373,5976,False
+rlad_hint_zeroshot_solver,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,0,2,False,True,26512,6036,False
+rlad_hint_zeroshot_solver,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,0,3,False,True,25506,6106,False
+rlad_hint_zeroshot_solver,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,1,0,False,True,25494,6288,False
+rlad_hint_zeroshot_solver,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,1,1,False,True,24586,5765,False
+rlad_hint_zeroshot_solver,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,1,2,False,True,23890,5746,False
+rlad_hint_zeroshot_solver,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,1,3,False,True,28243,6443,False
+rlad_hint_zeroshot_solver,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,2,0,True,False,19999,4792,True
+rlad_hint_zeroshot_solver,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,2,1,False,True,24071,5575,False
+rlad_hint_zeroshot_solver,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,2,2,False,True,24792,5792,False
+rlad_hint_zeroshot_solver,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,2,3,False,True,23024,5104,False
+rlad_hint_zeroshot_solver,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,3,0,False,True,23850,5677,False
+rlad_hint_zeroshot_solver,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,3,1,False,True,24410,5930,False
+rlad_hint_zeroshot_solver,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,3,2,False,True,27236,6127,False
+rlad_hint_zeroshot_solver,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,3,3,False,True,26804,5860,False
+rlad_hint_zeroshot_solver,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,0,0,False,True,33802,5961,False
+rlad_hint_zeroshot_solver,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,0,1,False,True,28394,5392,False
+rlad_hint_zeroshot_solver,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,0,2,True,False,23017,3973,True
+rlad_hint_zeroshot_solver,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,0,3,False,True,35178,6201,False
+rlad_hint_zeroshot_solver,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,1,0,False,True,36733,6261,False
+rlad_hint_zeroshot_solver,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,1,1,True,False,1148,216,True
+rlad_hint_zeroshot_solver,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,1,2,True,False,3324,560,True
+rlad_hint_zeroshot_solver,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,1,3,True,False,939,180,True
+rlad_hint_zeroshot_solver,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,2,0,False,True,35083,6180,False
+rlad_hint_zeroshot_solver,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,2,1,False,True,32471,5685,False
+rlad_hint_zeroshot_solver,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,2,2,False,True,33919,5805,False
+rlad_hint_zeroshot_solver,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,2,3,False,True,33024,5725,False
+rlad_hint_zeroshot_solver,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,3,0,False,True,30524,5474,True
+rlad_hint_zeroshot_solver,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,3,1,False,True,35201,6192,False
+rlad_hint_zeroshot_solver,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,3,2,False,True,33669,6184,False
+rlad_hint_zeroshot_solver,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,3,3,False,True,34427,6130,False
+rlad_hint_zeroshot_solver,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",0,0,False,True,24811,4957,False
+rlad_hint_zeroshot_solver,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",0,1,False,True,25704,5087,False
+rlad_hint_zeroshot_solver,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",0,2,False,True,25643,5137,False
+rlad_hint_zeroshot_solver,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",0,3,False,True,31460,6157,False
+rlad_hint_zeroshot_solver,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",1,0,False,True,28034,5612,False
+rlad_hint_zeroshot_solver,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",1,1,False,True,32471,6491,False
+rlad_hint_zeroshot_solver,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",1,2,False,True,33179,6657,False
+rlad_hint_zeroshot_solver,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",1,3,False,True,27282,5441,False
+rlad_hint_zeroshot_solver,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",2,0,False,True,31170,5917,False
+rlad_hint_zeroshot_solver,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",2,1,False,True,26669,5490,False
+rlad_hint_zeroshot_solver,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",2,2,True,False,7664,1344,True
+rlad_hint_zeroshot_solver,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",2,3,True,False,12052,2435,True
+rlad_hint_zeroshot_solver,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",3,0,False,True,31585,5807,False
+rlad_hint_zeroshot_solver,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",3,1,False,True,31014,5583,False
+rlad_hint_zeroshot_solver,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",3,2,False,True,30799,5563,False
+rlad_hint_zeroshot_solver,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",3,3,False,True,31464,5909,False
+rlad_hint_zeroshot_solver,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",0,0,False,True,24262,4961,False
+rlad_hint_zeroshot_solver,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",0,1,False,True,22411,4777,False
+rlad_hint_zeroshot_solver,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",0,2,False,True,25259,5179,False
+rlad_hint_zeroshot_solver,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",0,3,False,True,23702,5018,False
+rlad_hint_zeroshot_solver,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",1,0,True,False,3689,731,True
+rlad_hint_zeroshot_solver,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",1,1,True,False,2485,463,True
+rlad_hint_zeroshot_solver,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",1,2,True,False,6806,1590,True
+rlad_hint_zeroshot_solver,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",1,3,False,True,23734,5017,False
+rlad_hint_zeroshot_solver,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",2,0,True,False,2742,544,True
+rlad_hint_zeroshot_solver,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",2,1,False,True,23818,4962,False
+rlad_hint_zeroshot_solver,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",2,2,False,True,24799,4972,False
+rlad_hint_zeroshot_solver,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",2,3,True,False,4338,857,True
+rlad_hint_zeroshot_solver,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",3,0,False,True,20667,4688,False
+rlad_hint_zeroshot_solver,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",3,1,False,True,22906,5040,False
+rlad_hint_zeroshot_solver,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",3,2,True,False,19448,4359,True
+rlad_hint_zeroshot_solver,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",3,3,True,False,19902,4467,True
+rlad_hint_rlad_solver,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,0,0,True,False,10768,2282,True
+rlad_hint_rlad_solver,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,0,1,True,False,7712,1644,True
+rlad_hint_rlad_solver,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,0,2,True,False,11115,2306,True
+rlad_hint_rlad_solver,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,0,3,True,False,8785,1813,True
+rlad_hint_rlad_solver,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,1,0,True,False,11321,2357,True
+rlad_hint_rlad_solver,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,1,1,True,False,6846,1412,True
+rlad_hint_rlad_solver,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,1,2,True,False,9760,2086,True
+rlad_hint_rlad_solver,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,1,3,True,False,7755,1650,True
+rlad_hint_rlad_solver,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,2,0,True,False,10245,2255,True
+rlad_hint_rlad_solver,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,2,1,True,False,6174,1357,True
+rlad_hint_rlad_solver,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,2,2,True,False,8140,1745,True
+rlad_hint_rlad_solver,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,2,3,True,False,7193,1561,True
+rlad_hint_rlad_solver,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,3,0,True,False,7382,1641,True
+rlad_hint_rlad_solver,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,3,1,True,False,10766,2181,True
+rlad_hint_rlad_solver,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,3,2,True,False,8443,1867,True
+rlad_hint_rlad_solver,0,Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.,3,3,True,False,10049,2199,True
+rlad_hint_rlad_solver,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",0,0,False,True,23969,4748,False
+rlad_hint_rlad_solver,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",0,1,False,True,23253,4608,False
+rlad_hint_rlad_solver,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",0,2,False,True,23680,4675,False
+rlad_hint_rlad_solver,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",0,3,False,True,24008,4672,False
+rlad_hint_rlad_solver,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",1,0,False,True,25115,4916,False
+rlad_hint_rlad_solver,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",1,1,False,True,25733,4871,False
+rlad_hint_rlad_solver,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",1,2,False,True,23230,4382,False
+rlad_hint_rlad_solver,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",1,3,False,True,25703,5011,False
+rlad_hint_rlad_solver,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",2,0,False,True,24956,4831,False
+rlad_hint_rlad_solver,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",2,1,False,True,24963,4779,False
+rlad_hint_rlad_solver,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",2,2,False,True,24777,4798,False
+rlad_hint_rlad_solver,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",2,3,False,True,24402,4703,False
+rlad_hint_rlad_solver,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",3,0,False,True,22220,4614,True
+rlad_hint_rlad_solver,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",3,1,False,True,23104,4498,False
+rlad_hint_rlad_solver,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",3,2,False,True,23837,4737,False
+rlad_hint_rlad_solver,1,"On $\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\overline{AB}$ with $AD=4, DE=16$",3,3,False,True,22629,4478,False
+rlad_hint_rlad_solver,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,0,0,False,True,25896,5229,False
+rlad_hint_rlad_solver,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,0,1,True,False,13513,2833,True
+rlad_hint_rlad_solver,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,0,2,True,False,16184,3260,True
+rlad_hint_rlad_solver,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,0,3,True,False,21990,4784,True
+rlad_hint_rlad_solver,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,1,0,True,False,17537,3671,True
+rlad_hint_rlad_solver,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,1,1,True,False,16998,3488,True
+rlad_hint_rlad_solver,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,1,2,True,False,22812,4700,True
+rlad_hint_rlad_solver,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,1,3,True,False,2871,718,True
+rlad_hint_rlad_solver,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,2,0,True,False,14584,3121,True
+rlad_hint_rlad_solver,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,2,1,True,False,16614,3369,True
+rlad_hint_rlad_solver,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,2,2,True,False,16382,3414,True
+rlad_hint_rlad_solver,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,2,3,True,False,18997,3738,True
+rlad_hint_rlad_solver,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,3,0,True,False,14312,2953,True
+rlad_hint_rlad_solver,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,3,1,True,False,18167,3694,True
+rlad_hint_rlad_solver,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,3,2,True,False,15476,3223,True
+rlad_hint_rlad_solver,2,The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a sin,3,3,True,False,21876,4322,True
+rlad_hint_rlad_solver,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",0,0,True,False,18706,3876,True
+rlad_hint_rlad_solver,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",0,1,True,False,19165,3829,True
+rlad_hint_rlad_solver,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",0,2,True,False,21179,4245,True
+rlad_hint_rlad_solver,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",0,3,True,False,17808,3608,True
+rlad_hint_rlad_solver,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",1,0,True,False,20047,3965,True
+rlad_hint_rlad_solver,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",1,1,True,False,21966,4546,True
+rlad_hint_rlad_solver,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",1,2,True,False,20659,4018,True
+rlad_hint_rlad_solver,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",1,3,True,False,20642,4255,True
+rlad_hint_rlad_solver,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",2,0,True,False,19486,3896,True
+rlad_hint_rlad_solver,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",2,1,True,False,16093,3271,True
+rlad_hint_rlad_solver,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",2,2,True,False,19988,3981,True
+rlad_hint_rlad_solver,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",2,3,True,False,18782,3731,True
+rlad_hint_rlad_solver,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",3,0,True,False,19128,3846,True
+rlad_hint_rlad_solver,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",3,1,True,False,22087,4537,True
+rlad_hint_rlad_solver,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",3,2,False,True,21893,4460,True
+rlad_hint_rlad_solver,3,"Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $10",3,3,True,False,20128,3993,True
+rlad_hint_rlad_solver,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",0,0,False,True,26389,4891,False
+rlad_hint_rlad_solver,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",0,1,True,False,23975,4728,True
+rlad_hint_rlad_solver,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",0,2,False,True,23100,4655,False
+rlad_hint_rlad_solver,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",0,3,False,True,23441,4427,False
+rlad_hint_rlad_solver,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",1,0,False,True,23488,4709,False
+rlad_hint_rlad_solver,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",1,1,False,True,22857,4596,False
+rlad_hint_rlad_solver,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",1,2,False,True,24643,4853,False
+rlad_hint_rlad_solver,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",1,3,False,True,26053,4900,False
+rlad_hint_rlad_solver,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",2,0,False,True,27753,5113,True
+rlad_hint_rlad_solver,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",2,1,False,True,26676,4946,False
+rlad_hint_rlad_solver,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",2,2,False,True,26630,4932,False
+rlad_hint_rlad_solver,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",2,3,False,True,26727,5104,False
+rlad_hint_rlad_solver,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",3,0,False,True,23476,4666,False
+rlad_hint_rlad_solver,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",3,1,False,True,22860,4417,True
+rlad_hint_rlad_solver,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",3,2,False,True,26619,5036,False
+rlad_hint_rlad_solver,4,"There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exa",3,3,False,True,24280,4615,False
+rlad_hint_rlad_solver,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,0,0,True,False,19572,4213,True
+rlad_hint_rlad_solver,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,0,1,True,False,12219,2607,True
+rlad_hint_rlad_solver,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,0,2,True,False,9942,2095,True
+rlad_hint_rlad_solver,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,0,3,False,True,20799,4567,True
+rlad_hint_rlad_solver,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,1,0,True,False,7436,1696,True
+rlad_hint_rlad_solver,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,1,1,True,False,10513,2304,True
+rlad_hint_rlad_solver,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,1,2,True,False,9106,2043,True
+rlad_hint_rlad_solver,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,1,3,True,False,12450,2734,True
+rlad_hint_rlad_solver,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,2,0,True,False,8824,1841,True
+rlad_hint_rlad_solver,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,2,1,True,False,17352,3849,True
+rlad_hint_rlad_solver,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,2,2,True,False,8437,1867,True
+rlad_hint_rlad_solver,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,2,3,True,False,7295,1634,True
+rlad_hint_rlad_solver,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,3,0,True,False,9782,2123,True
+rlad_hint_rlad_solver,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,3,1,True,False,8586,1891,True
+rlad_hint_rlad_solver,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,3,2,True,False,7136,1526,True
+rlad_hint_rlad_solver,5,An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the ,3,3,True,False,7227,1561,True
+rlad_hint_rlad_solver,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",0,0,False,True,35129,6742,False
+rlad_hint_rlad_solver,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",0,1,False,True,31719,6126,False
+rlad_hint_rlad_solver,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",0,2,False,True,35071,6655,False
+rlad_hint_rlad_solver,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",0,3,False,True,33214,6439,False
+rlad_hint_rlad_solver,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",1,0,False,True,32941,6478,False
+rlad_hint_rlad_solver,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",1,1,False,True,35353,6718,False
+rlad_hint_rlad_solver,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",1,2,False,True,34105,6597,False
+rlad_hint_rlad_solver,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",1,3,False,True,31651,6240,False
+rlad_hint_rlad_solver,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",2,0,True,False,3722,680,True
+rlad_hint_rlad_solver,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",2,1,False,True,33350,6571,False
+rlad_hint_rlad_solver,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",2,2,True,False,5334,1004,True
+rlad_hint_rlad_solver,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",2,3,False,True,33464,6394,False
+rlad_hint_rlad_solver,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",3,0,False,True,32705,6330,False
+rlad_hint_rlad_solver,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",3,1,False,True,35362,6724,False
+rlad_hint_rlad_solver,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",3,2,False,True,35617,6782,False
+rlad_hint_rlad_solver,6,"The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. ",3,3,False,True,33705,6498,False
+rlad_hint_rlad_solver,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,0,0,False,True,21126,4216,False
+rlad_hint_rlad_solver,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,0,1,True,False,12097,2747,True
+rlad_hint_rlad_solver,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,0,2,True,False,14055,3010,True
+rlad_hint_rlad_solver,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,0,3,True,False,9479,2149,True
+rlad_hint_rlad_solver,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,1,0,False,True,20579,4509,False
+rlad_hint_rlad_solver,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,1,1,False,True,21273,4224,False
+rlad_hint_rlad_solver,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,1,2,False,True,23721,4698,False
+rlad_hint_rlad_solver,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,1,3,True,False,17368,3724,True
+rlad_hint_rlad_solver,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,2,0,False,True,20667,4252,False
+rlad_hint_rlad_solver,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,2,1,False,True,22843,4576,False
+rlad_hint_rlad_solver,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,2,2,True,False,18122,3914,True
+rlad_hint_rlad_solver,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,2,3,True,False,12047,2697,True
+rlad_hint_rlad_solver,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,3,0,False,True,19674,4152,False
+rlad_hint_rlad_solver,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,3,1,False,True,21562,4301,False
+rlad_hint_rlad_solver,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,3,2,True,False,13466,2858,True
+rlad_hint_rlad_solver,7,Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one c,3,3,False,True,19823,4036,False
+rlad_hint_rlad_solver,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,0,0,False,True,24019,4841,False
+rlad_hint_rlad_solver,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,0,1,False,True,26422,5302,False
+rlad_hint_rlad_solver,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,0,2,False,True,24639,5041,False
+rlad_hint_rlad_solver,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,0,3,False,True,27361,5502,False
+rlad_hint_rlad_solver,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,1,0,False,True,24071,4974,False
+rlad_hint_rlad_solver,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,1,1,False,True,24521,5171,False
+rlad_hint_rlad_solver,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,1,2,False,True,24201,4987,False
+rlad_hint_rlad_solver,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,1,3,False,True,24359,5406,False
+rlad_hint_rlad_solver,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,2,0,False,True,24614,5086,False
+rlad_hint_rlad_solver,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,2,1,False,True,22474,4698,False
+rlad_hint_rlad_solver,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,2,2,False,True,24627,5066,False
+rlad_hint_rlad_solver,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,2,3,False,True,26625,5894,False
+rlad_hint_rlad_solver,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,3,0,False,True,20897,4232,False
+rlad_hint_rlad_solver,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,3,1,False,True,24844,5006,False
+rlad_hint_rlad_solver,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,3,2,False,True,24658,4999,False
+rlad_hint_rlad_solver,8,The parabola with equation $y=x^{2}-4$ is rotated $60^{\circ}$ counterclockwise around the origin. T,3,3,False,True,24543,5081,False
+rlad_hint_rlad_solver,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,0,0,True,False,2788,551,True
+rlad_hint_rlad_solver,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,0,1,False,True,31320,5708,False
+rlad_hint_rlad_solver,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,0,2,False,True,30620,5604,False
+rlad_hint_rlad_solver,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,0,3,True,False,3444,659,True
+rlad_hint_rlad_solver,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,1,0,False,True,30960,5686,False
+rlad_hint_rlad_solver,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,1,1,False,True,31133,5633,False
+rlad_hint_rlad_solver,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,1,2,False,True,31204,5707,False
+rlad_hint_rlad_solver,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,1,3,False,True,31580,5727,False
+rlad_hint_rlad_solver,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,2,0,False,True,30950,5631,False
+rlad_hint_rlad_solver,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,2,1,False,True,31625,5719,False
+rlad_hint_rlad_solver,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,2,2,False,True,31100,5678,False
+rlad_hint_rlad_solver,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,2,3,False,True,32599,5904,False
+rlad_hint_rlad_solver,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,3,0,False,True,31341,5665,False
+rlad_hint_rlad_solver,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,3,1,False,True,30635,5608,False
+rlad_hint_rlad_solver,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,3,2,False,True,29341,5367,False
+rlad_hint_rlad_solver,9,The 27 cells of a $3\times9$ grid are filled in using the numbers 1 through 9 so that each row conta,3,3,False,True,30658,5592,False
+rlad_hint_rlad_solver,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",0,0,True,False,8481,1605,True
+rlad_hint_rlad_solver,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",0,1,True,False,9925,2087,True
+rlad_hint_rlad_solver,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",0,2,False,True,21705,4309,False
+rlad_hint_rlad_solver,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",0,3,True,False,12094,2510,True
+rlad_hint_rlad_solver,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",1,0,False,True,20083,4113,False
+rlad_hint_rlad_solver,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",1,1,True,False,4144,865,True
+rlad_hint_rlad_solver,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",1,2,True,False,8404,1831,True
+rlad_hint_rlad_solver,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",1,3,True,False,4179,954,True
+rlad_hint_rlad_solver,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",2,0,False,True,25041,5080,False
+rlad_hint_rlad_solver,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",2,1,False,True,21631,4547,False
+rlad_hint_rlad_solver,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",2,2,False,True,23933,4725,False
+rlad_hint_rlad_solver,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",2,3,False,True,21886,4590,False
+rlad_hint_rlad_solver,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",3,0,False,True,23282,4924,False
+rlad_hint_rlad_solver,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",3,1,False,True,24091,4628,False
+rlad_hint_rlad_solver,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",3,2,False,True,22132,4483,False
+rlad_hint_rlad_solver,10,"A piecewise linear periodic function is defined by $f(x)=\begin{cases}x&\text{if }x\in[-1,1)\\2-x&\t",3,3,False,True,21779,4399,False
+rlad_hint_rlad_solver,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,0,0,True,False,5752,1147,True
+rlad_hint_rlad_solver,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,0,1,False,True,29085,6187,False
+rlad_hint_rlad_solver,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,0,2,False,True,27682,6254,False
+rlad_hint_rlad_solver,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,0,3,False,True,26188,5226,False
+rlad_hint_rlad_solver,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,1,0,False,True,26233,6103,False
+rlad_hint_rlad_solver,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,1,1,False,True,25866,6060,False
+rlad_hint_rlad_solver,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,1,2,False,True,25916,5633,False
+rlad_hint_rlad_solver,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,1,3,False,True,24757,5558,False
+rlad_hint_rlad_solver,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,2,0,False,True,26253,6274,False
+rlad_hint_rlad_solver,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,2,1,False,True,28264,6492,False
+rlad_hint_rlad_solver,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,2,2,False,True,24040,5518,False
+rlad_hint_rlad_solver,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,2,3,False,True,23899,5566,False
+rlad_hint_rlad_solver,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,3,0,False,True,26086,5926,False
+rlad_hint_rlad_solver,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,3,1,False,True,28102,5618,False
+rlad_hint_rlad_solver,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,3,2,False,True,25353,5776,False
+rlad_hint_rlad_solver,11,The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinat,3,3,False,True,28895,6053,False
+rlad_hint_rlad_solver,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,0,0,False,True,37432,6455,False
+rlad_hint_rlad_solver,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,0,1,False,True,30307,5647,False
+rlad_hint_rlad_solver,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,0,2,False,True,33230,5987,False
+rlad_hint_rlad_solver,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,0,3,False,True,35127,6112,False
+rlad_hint_rlad_solver,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,1,0,True,False,29847,5531,True
+rlad_hint_rlad_solver,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,1,1,True,False,31286,5777,True
+rlad_hint_rlad_solver,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,1,2,False,True,31963,5971,False
+rlad_hint_rlad_solver,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,1,3,False,True,31801,5904,False
+rlad_hint_rlad_solver,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,2,0,False,True,35785,6187,False
+rlad_hint_rlad_solver,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,2,1,False,True,34045,6069,False
+rlad_hint_rlad_solver,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,2,2,True,False,20798,3852,True
+rlad_hint_rlad_solver,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,2,3,False,True,34080,5992,False
+rlad_hint_rlad_solver,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,3,0,False,True,36487,6284,False
+rlad_hint_rlad_solver,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,3,1,False,True,33441,6135,False
+rlad_hint_rlad_solver,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,3,2,True,False,2121,369,True
+rlad_hint_rlad_solver,12,Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center ,3,3,False,True,36191,6277,False
+rlad_hint_rlad_solver,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",0,0,False,True,30971,5902,False
+rlad_hint_rlad_solver,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",0,1,False,True,31897,5975,False
+rlad_hint_rlad_solver,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",0,2,False,True,29778,5692,False
+rlad_hint_rlad_solver,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",0,3,False,True,31001,5777,False
+rlad_hint_rlad_solver,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",1,0,False,True,29975,5868,False
+rlad_hint_rlad_solver,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",1,1,True,False,5163,959,True
+rlad_hint_rlad_solver,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",1,2,False,True,33870,6441,False
+rlad_hint_rlad_solver,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",1,3,False,True,30392,5938,False
+rlad_hint_rlad_solver,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",2,0,False,True,30278,5669,False
+rlad_hint_rlad_solver,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",2,1,False,True,29857,5729,False
+rlad_hint_rlad_solver,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",2,2,False,True,26476,5114,False
+rlad_hint_rlad_solver,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",2,3,False,True,24954,4795,False
+rlad_hint_rlad_solver,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",3,0,False,True,31668,5880,False
+rlad_hint_rlad_solver,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",3,1,False,True,31695,5786,False
+rlad_hint_rlad_solver,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",3,2,False,True,31001,5716,False
+rlad_hint_rlad_solver,13,"Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\angle B=\angle E=60^",3,3,False,True,31675,5738,False
+rlad_hint_rlad_solver,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",0,0,False,True,27996,5586,False
+rlad_hint_rlad_solver,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",0,1,False,True,27184,5412,False
+rlad_hint_rlad_solver,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",0,2,False,True,26073,5220,False
+rlad_hint_rlad_solver,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",0,3,False,True,26861,5310,False
+rlad_hint_rlad_solver,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",1,0,False,True,24911,5060,False
+rlad_hint_rlad_solver,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",1,1,False,True,24721,4975,False
+rlad_hint_rlad_solver,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",1,2,False,True,23965,5030,False
+rlad_hint_rlad_solver,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",1,3,False,True,25618,5267,False
+rlad_hint_rlad_solver,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",2,0,False,True,25796,5248,False
+rlad_hint_rlad_solver,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",2,1,False,True,24667,5164,False
+rlad_hint_rlad_solver,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",2,2,False,True,25310,5107,False
+rlad_hint_rlad_solver,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",2,3,False,True,26004,5246,False
+rlad_hint_rlad_solver,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",3,0,False,True,24277,5045,False
+rlad_hint_rlad_solver,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",3,1,False,True,24629,5150,False
+rlad_hint_rlad_solver,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",3,2,False,True,24061,5110,False
+rlad_hint_rlad_solver,14,"Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\leq3^6$",3,3,False,True,24954,5118,False

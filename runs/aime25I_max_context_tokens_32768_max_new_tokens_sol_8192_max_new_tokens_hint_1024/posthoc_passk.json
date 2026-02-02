@@ -1,0 +1,46 @@
+{
+  "zeroshot_solver": {
+    "n_examples": 15,
+    "n_samples_min": 16,
+    "n_samples_max": 16,
+    "pass@1_first": 0.26666666666666666,
+    "pass@4_4x1": 0.4666666666666667,
+    "pass@16_any": 0.5333333333333333,
+    "pass@1_est_from_n": 0.2833333333333333,
+    "pass@4_est_from_n": 0.427912087912088,
+    "pass@16_est_from_n": 0.5333333333333333
+  },
+  "rlad_solver_no_hint": {
+    "n_examples": 15,
+    "n_samples_min": 16,
+    "n_samples_max": 16,
+    "pass@1_first": 0.2,
+    "pass@4_4x1": 0.4,
+    "pass@16_any": 0.4666666666666667,
+    "pass@1_est_from_n": 0.31666666666666665,
+    "pass@4_est_from_n": 0.42102564102564105,
+    "pass@16_est_from_n": 0.4666666666666667
+  },
+  "rlad_hint_zeroshot_solver": {
+    "n_examples": 15,
+    "n_samples_min": 16,
+    "n_samples_max": 16,
+    "pass@1_first": 0.4,
+    "pass@4_4x1": 0.5333333333333333,
+    "pass@16_any": 0.6,
+    "pass@1_est_from_n": 0.24583333333333332,
+    "pass@4_est_from_n": 0.4222710622710623,
+    "pass@16_est_from_n": 0.6
+  },
+  "rlad_hint_rlad_solver": {
+    "n_examples": 15,
+    "n_samples_min": 16,
+    "n_samples_max": 16,
+    "pass@1_first": 0.13333333333333333,
+    "pass@4_4x1": 0.3333333333333333,
+    "pass@16_any": 0.5333333333333333,
+    "pass@1_est_from_n": 0.3,
+    "pass@4_est_from_n": 0.41586080586080587,
+    "pass@16_est_from_n": 0.5333333333333333
+  }
+}
