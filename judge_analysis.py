@@ -143,7 +143,7 @@ def classify_with_transformers(
     return results
 
 
-def main():
+def main(): 
     ap = argparse.ArgumentParser()
     ap.add_argument("--input", required=True)
     ap.add_argument("--output", required=True)
